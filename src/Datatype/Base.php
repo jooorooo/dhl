@@ -16,16 +16,16 @@
 
 /**
  * File:        Base.php
- * Project:     Dhl API
+ * Project:     DHL API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace Dhl\Datatype;
+namespace DHL\Datatype;
 
 /**
- * Abstract class for each datatype used by the models by Dhl
+ * Abstract class for each datatype used by the models by DHL
  */
 abstract class Base
 {
@@ -54,10 +54,6 @@ abstract class Base
     {
         $this->initializeValues();
     }
-	
-	public function __getValues() {
-		return $this->_values;
-	}
 
     /**
      * Check if current object is empty or not
@@ -85,7 +81,7 @@ abstract class Base
     }
 
     /**
-     * Generates the XML to be sent to Dhl
+     * Generates the XML to be sent to DHL
      * 
      * @param \XMLWriter $xmlWriter XMl Writer instance
      * 
@@ -254,7 +250,7 @@ abstract class Base
      * 
      * @param string $key Key to check
      * 
-     * @return boolean True if it exsits, false otherwise 
+     * @return boolean True if it exsits, false otherwise
      */
     final public function __isset($key) 
     {
@@ -309,18 +305,9 @@ abstract class Base
     {
         foreach ($this->_params as $name => $infos) 
         {
-			$s = '';
-			if (isset($this->_params[$name . 's']) 
-				&& $this->_params[$name . 's']['type'] != 'string' 
-				&& isset($this->_params[$name. 's']['multivalues']) 
-				&& true === $this->_params[$name . 's']['multivalues'])
-			{
-				$s = 's';
-			}
             if (isset($infos['multivalues']) && $infos['multivalues']) 
             {
-                $this->_values[$name] = '@property array $' . $name . '  '.(!empty($infos['comment']) ? (''."\n\t*\t".'('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-                $this->_values['_m'.$name . $s] = '@method array add' . $name . $s . '(array $' . $name .  ')  '.(!empty($infos['comment']) ? (''."\n\t*\t".'('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
+                $this->_values[$name] = array();
             }
             elseif (isset($infos['subobject']) && $infos['subobject'])
             {
@@ -328,19 +315,11 @@ abstract class Base
                 $parts = explode('\\', $tmp);
                 array_pop($parts);
                 $className = implode('\\', $parts) . '\\' . $infos['type'];
-				if(strpos($className, '\\') !== 0) {
-					$className = '\\' . $className;
-				}
-				$this->_values[$name] = '@property '.$className.' $' . $name . ' '."\n".' '.(!empty($infos['comment']) ? ('('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-                $this->_values['_m'.$name . $s] = '@method '.$className.' add' . $name . $s . '('.($s?'array ':$className.' ').'$'.$name.')  '.(!empty($infos['comment']) ? (''."\n\t*\t".'('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-				if($s) {
-					$this->_values['_m'.$name] = '@method '.$className.' add' . $name . '('.$className.' $'.$name.')  '.(!empty($infos['comment']) ? (''."\n\t*\t".'('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-				}
+                $this->_values[$name] = new $className();
             }
             else
             {
-                $this->_values[$name] = '@property null $' . $name . ' '."\n".' '.(!empty($infos['comment']) ? ('('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-                $this->_values['_m'.$name . $s] = '@method null add' . $name . $s . '($' . $name . ' = null)  '.(!empty($infos['comment']) ? (''."\n\t*\t".'('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
+                $this->_values[$name] = null;
             }
         }
     }

@@ -16,17 +16,17 @@
 
 /**
  * File:        Base.php
- * Project:     Dhl API
+ * Project:     DHL API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace Dhl\Entity;
-use Dhl\Datatype\Base as BaseDataType;
+namespace DHL\Entity;
+use DHL\Datatype\Base as BaseDataType;
 
 /**
- * Abstract class for each entity model used by Dhl
+ * Abstract class for each entity model used by DHL
  */
 abstract class Base extends BaseDataType
 {
@@ -111,8 +111,8 @@ abstract class Base extends BaseDataType
     /**
      * Class constants
      */
-    const Dhl_REQ = 'http://www.dhl.com';
-    const Dhl_XSI = 'http://www.w3.org/2001/XMLSchema-instance';
+    const DHL_REQ = 'http://www.dhl.com';
+    const DHL_XSI = 'http://www.w3.org/2001/XMLSchema-instance';
 
     /**
      * Class constructor
@@ -122,13 +122,9 @@ abstract class Base extends BaseDataType
         $this->_params = array_merge($this->_headerParams, $this->_bodyParams);
         $this->initializeValues();
     }
-	
-	public function __getValues() {
-		return $this->_values;
-	}
 
     /**
-     * Generates the XML to be sent to Dhl
+     * Generates the XML to be sent to DHL
      *
      * @param \XMLWriter $xmlWriter XMl Writer instance
      *   
@@ -144,9 +140,9 @@ abstract class Base extends BaseDataType
         $xmlWriter->startDocument('1.0', 'UTF-8');
             
         $xmlWriter->startElement('req:' . $this->_serviceName);
-        $xmlWriter->writeAttribute('xmlns:req', self::Dhl_REQ);
-        $xmlWriter->writeAttribute('xmlns:xsi', self::Dhl_XSI);
-        $xmlWriter->writeAttribute('xsi:schemaLocation', self::Dhl_REQ . ' ' .$this->_serviceXSD);
+        $xmlWriter->writeAttribute('xmlns:req', self::DHL_REQ);
+        $xmlWriter->writeAttribute('xmlns:xsi', self::DHL_XSI);
+        $xmlWriter->writeAttribute('xsi:schemaLocation', self::DHL_REQ . ' ' .$this->_serviceXSD);
     
         if ($this->_displaySchemaVersion) 
         {
@@ -237,7 +233,7 @@ abstract class Base extends BaseDataType
         if (!empty($xml->Response->Status->Condition->ConditionCode))
         {
             $errorMsg = ((string) $xml->Response->Status->Condition->ConditionCode) . ' : ' . ((string) $xml->Response->Status->Condition->ConditionData);
-            throw new \Exception('Error returned from Dhl webservice : ' . $errorMsg);
+            throw new \Exception('Error returned from DHL webservice : ' . $errorMsg);
         }
 
         $parts = explode('\\', get_class($this));
@@ -303,21 +299,12 @@ abstract class Base extends BaseDataType
     {
         foreach ($this->_params as $name => $infos) 
         {
-			$s = '';
-			if (isset($this->_params[$name . 's']) 
-				&& $this->_params[$name . 's']['type'] != 'string' 
-				&& isset($this->_params[$name. 's']['multivalues']) 
-				&& true === $this->_params[$name . 's']['multivalues'])
-			{
-				$s = 's';
-			}
             if (!$this->_isSubobject && isset($infos['subobject']) && $infos['subobject'])
             {
                 if (isset($infos['multivalues']) && $infos['multivalues']) 
                 {
-                    $this->_values[$name] = '@property array $' . $name . '  '.(!empty($infos['comment']) ? (''."\n\t*\t".'('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-					$this->_values['_m'.$name . $s] = '@method array add' . $name . $s . '(array $' . $name .  ')  '.(!empty($infos['comment']) ? (''."\n\t*\t".'('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-				}
+                    $this->_values[$name] = array();
+                }
                 else
                 {
                     $tmp = get_class($this);
@@ -325,20 +312,12 @@ abstract class Base extends BaseDataType
                     array_pop($parts);
                     $className = implode('\\', $parts) . '\\' . $infos['type'];
                     $className = str_replace('Entity', 'Datatype', $className);
-					if(strpos($className, '\\') !== 0) {
-						$className = '\\' . $className;
-					}
-					$this->_values[$name] = '@property '.$className.' $' . $name . ' '."\n".' '.(!empty($infos['comment']) ? ('('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-					$this->_values['_m'.$name . $s] = '@method '.$className.' add' . $name . $s . '('.($s?'array ':$className.' ').'$'.$name.')  '.(!empty($infos['comment']) ? (''."\n\t*\t".'('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-					if($s) {
-						$this->_values['_m'.$name] = '@method '.$className.' add' . $name . '('.$className.' $'.$name.')  '.(!empty($infos['comment']) ? (''."\n\t*\t".'('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-					}
+                    $this->_values[$name] = new $className();
                 }
             }
             else
             {
-                $this->_values[$name] = '@property null $' . $name . ' '."\n".' '.(!empty($infos['comment']) ? ('('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
-                $this->_values['_m'.$name . $s] = '@method null add' . $name . $s . '($' . $name . ' = null)  '.(!empty($infos['comment']) ? (''."\n\t*\t".'('.str_replace("\n", "\n*\t", $infos['comment']).')') : '').'';
+                $this->_values[$name] = null;
             }
         }
     }
