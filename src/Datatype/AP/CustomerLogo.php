@@ -16,14 +16,14 @@
 
 /**
  * File:        CustomerLogo.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AP; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AP; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -36,7 +36,7 @@ use DHL\Datatype\Base;
  *	@method null addLogoImageFormat($LogoImageFormat = null)
  *	(LogoImage Format)
  *
- * CustomerLogo Request model for DHL API
+ * CustomerLogo Request model for Dhl API
  */
 class CustomerLogo extends Base
 {

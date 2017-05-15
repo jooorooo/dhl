@@ -16,23 +16,23 @@
 
 /**
  * File:        Status.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
  *	@property null $ActionStatus
  *	@method null addActionStatus($ActionStatus = null)
- *	@property \DHL\Datatype\EA\Condition $Condition
- *	@method \DHL\Datatype\EA\Condition addCondition(\DHL\Datatype\EA\Condition $Condition)
+ *	@property \Dhl\Datatype\EA\Condition $Condition
+ *	@method \Dhl\Datatype\EA\Condition addCondition(\Dhl\Datatype\EA\Condition $Condition)
  *
- * Status Request model for DHL API
+ * Status Request model for Dhl API
  */
 class Status extends Base
 {

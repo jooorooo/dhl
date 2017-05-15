@@ -16,14 +16,14 @@
 
 /**
  * File:        DCTFrom.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -38,7 +38,7 @@ use DHL\Datatype\Base;
  *	@property null $VatNo
  *	@method null addVatNo($VatNo = null)
  *
- * DCTFrom Request model for DHL API
+ * DCTFrom Request model for Dhl API
  */
 class DCTFrom extends Base
 {

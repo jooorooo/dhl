@@ -16,14 +16,14 @@
 
 /**
  * File:        Shipper.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AP; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AP; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -36,9 +36,9 @@ use DHL\Datatype\Base;
  *	@method null addCompanyName($CompanyName = null)
  *	(Name of company / business)
  *	@property null $RegisteredAccount
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addRegisteredAccount($RegisteredAccount = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@property null $AddressLine
  *	(Address Line)
  *	@method null addAddressLine($AddressLine = null)
@@ -77,10 +77,10 @@ use DHL\Datatype\Base;
  *	@method null addFederalTaxId($FederalTaxId = null)
  *	@property null $StateTaxId
  *	@method null addStateTaxId($StateTaxId = null)
- *	@property \DHL\Datatype\AP\Contact $Contact
- *	@method \DHL\Datatype\AP\Contact addContact(\DHL\Datatype\AP\Contact $Contact)
+ *	@property \Dhl\Datatype\AP\Contact $Contact
+ *	@method \Dhl\Datatype\AP\Contact addContact(\Dhl\Datatype\AP\Contact $Contact)
  *
- * Shipper Request model for DHL API
+ * Shipper Request model for Dhl API
  */
 class Shipper extends Base
 {
@@ -113,7 +113,7 @@ class Shipper extends Base
             'type' => 'AccountNumber',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxInclusive' => '9999999999',
             'minInclusive' => '100000000',
         ), 

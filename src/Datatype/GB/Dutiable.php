@@ -16,14 +16,14 @@
 
 /**
  * File:        Dutiable.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -63,10 +63,10 @@ use DHL\Datatype\Base;
  *	(Boolean flag)
  *	@method null addCommerceLicensed($CommerceLicensed = null)
  *	(Boolean flag)
- *	@property \DHL\Datatype\GB\Filing $Filing
- *	@method \DHL\Datatype\GB\Filing addFiling(\DHL\Datatype\GB\Filing $Filing)
+ *	@property \Dhl\Datatype\GB\Filing $Filing
+ *	@method \Dhl\Datatype\GB\Filing addFiling(\Dhl\Datatype\GB\Filing $Filing)
  *
- * Dutiable Request model for DHL API
+ * Dutiable Request model for Dhl API
  */
 class Dutiable extends Base
 {

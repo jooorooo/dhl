@@ -3,8 +3,8 @@
  *
  *	@property null $ActionNote
  *	@method null addActionNote($ActionNote = null)
- *	@property \DHL\Datatype\GB\Condition $Condition
- *	@method \DHL\Datatype\GB\Condition addCondition(\DHL\Datatype\GB\Condition $Condition)
+ *	@property \Dhl\Datatype\GB\Condition $Condition
+ *	@method \Dhl\Datatype\GB\Condition addCondition(\Dhl\Datatype\GB\Condition $Condition)
  *
  * Note : Code is released under the GNU LGPL
  *
@@ -22,17 +22,17 @@
 
 /**
  * File:        Note.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
-  Request model for DHL API
+  Request model for Dhl API
  */
 class Note extends Base
 {

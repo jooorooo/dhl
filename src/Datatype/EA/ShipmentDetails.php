@@ -16,21 +16,21 @@
 
 /**
  * File:        ShipmentDetails.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
  *	@property null $NumberOfPieces
  *	@method null addNumberOfPieces($NumberOfPieces = null)
- *	@property \DHL\Datatype\EA\Pieces $Pieces
- *	@method \DHL\Datatype\EA\Pieces addPieces(\DHL\Datatype\EA\Pieces $Pieces)
+ *	@property \Dhl\Datatype\EA\Pieces $Pieces
+ *	@method \Dhl\Datatype\EA\Pieces addPieces(\Dhl\Datatype\EA\Pieces $Pieces)
  *	@property null $Weight
  *	(Weight of piece or shipment)
  *	@method null addWeight($Weight = null)
@@ -40,37 +40,37 @@ use DHL\Datatype\Base;
  *	@method null addWeightUnit($WeightUnit = null)
  *	(Unit of weight measurement (L:Pounds))
  *	@property null $ProductCode
- *	(DHL product code
+ *	(Dhl product code
  *	D : US Overnight  (>0.5 lb) and Worldwide Express Non-dutiable  (>0.5 lb)
  *	X : USA Express Envelope   (less than or  = 0.5 lb) and Worldwide Express-International Express Envelope  (less than or = 0.5 lb)
  *	W : Worldwide Express-Dutiable
- *	Y : DHL Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
- *	G : DHL Second Day . Weight > 0.5 lb or not an express envelop
- *	T : DHL Ground Shipments)
+ *	Y : Dhl Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
+ *	G : Dhl Second Day . Weight > 0.5 lb or not an express envelop
+ *	T : Dhl Ground Shipments)
  *	@method null addProductCode($ProductCode = null)
- *	(DHL product code
+ *	(Dhl product code
  *	D : US Overnight  (>0.5 lb) and Worldwide Express Non-dutiable  (>0.5 lb)
  *	X : USA Express Envelope   (less than or  = 0.5 lb) and Worldwide Express-International Express Envelope  (less than or = 0.5 lb)
  *	W : Worldwide Express-Dutiable
- *	Y : DHL Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
- *	G : DHL Second Day . Weight > 0.5 lb or not an express envelop
- *	T : DHL Ground Shipments)
+ *	Y : Dhl Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
+ *	G : Dhl Second Day . Weight > 0.5 lb or not an express envelop
+ *	T : Dhl Ground Shipments)
  *	@property null $GlobalProductCode
- *	(DHL product code
+ *	(Dhl product code
  *	D : US Overnight  (>0.5 lb) and Worldwide Express Non-dutiable  (>0.5 lb)
  *	X : USA Express Envelope   (less than or  = 0.5 lb) and Worldwide Express-International Express Envelope  (less than or = 0.5 lb)
  *	W : Worldwide Express-Dutiable
- *	Y : DHL Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
- *	G : DHL Second Day . Weight > 0.5 lb or not an express envelop
- *	T : DHL Ground Shipments)
+ *	Y : Dhl Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
+ *	G : Dhl Second Day . Weight > 0.5 lb or not an express envelop
+ *	T : Dhl Ground Shipments)
  *	@method null addGlobalProductCode($GlobalProductCode = null)
- *	(DHL product code
+ *	(Dhl product code
  *	D : US Overnight  (>0.5 lb) and Worldwide Express Non-dutiable  (>0.5 lb)
  *	X : USA Express Envelope   (less than or  = 0.5 lb) and Worldwide Express-International Express Envelope  (less than or = 0.5 lb)
  *	W : Worldwide Express-Dutiable
- *	Y : DHL Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
- *	G : DHL Second Day . Weight > 0.5 lb or not an express envelop
- *	T : DHL Ground Shipments)
+ *	Y : Dhl Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
+ *	G : Dhl Second Day . Weight > 0.5 lb or not an express envelop
+ *	T : Dhl Ground Shipments)
  *	@property null $LocalProductCode
  *	@method null addLocalProductCode($LocalProductCode = null)
  *	@property null $Date
@@ -94,9 +94,9 @@ use DHL\Datatype\Base;
  *	@method null addInsuredAmount($InsuredAmount = null)
  *	(Monetary amount (with 2 decimal precision))
  *	@property null $PackageType
- *	(Package Type (EE: DHL Express Envelope, OD:Other DHL Packaging, CP:Customer-provided.Ground shipments must choose CP))
+ *	(Package Type (EE: Dhl Express Envelope, OD:Other Dhl Packaging, CP:Customer-provided.Ground shipments must choose CP))
  *	@method null addPackageType($PackageType = null)
- *	(Package Type (EE: DHL Express Envelope, OD:Other DHL Packaging, CP:Customer-provided.Ground shipments must choose CP))
+ *	(Package Type (EE: Dhl Express Envelope, OD:Other Dhl Packaging, CP:Customer-provided.Ground shipments must choose CP))
  *	@property null $IsDutiable
  *	(Boolean flag)
  *	@method null addIsDutiable($IsDutiable = null)
@@ -110,7 +110,7 @@ use DHL\Datatype\Base;
  *	@method null addCustData($CustData = null)
  *	(CustData)
  *
- * ShipmentDetails Request model for DHL API
+ * ShipmentDetails Request model for Dhl API
  */
 class ShipmentDetails extends Base
 {
@@ -156,13 +156,13 @@ class ShipmentDetails extends Base
             'type' => 'ProductCode',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL product code 
+            'comment' => 'Dhl product code 
 			D : US Overnight  (>0.5 lb) and Worldwide Express Non-dutiable  (>0.5 lb) 
 			X : USA Express Envelope   (less than or  = 0.5 lb) and Worldwide Express-International Express Envelope  (less than or = 0.5 lb) 
 			W : Worldwide Express-Dutiable
-			Y : DHL Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
-			G : DHL Second Day . Weight > 0.5 lb or not an express envelop
-			T : DHL Ground Shipments',
+			Y : Dhl Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
+			G : Dhl Second Day . Weight > 0.5 lb or not an express envelop
+			T : Dhl Ground Shipments',
             'pattern' => '([A-Z0-9])*',
             'minLength' => '1',
             'maxLength' => '4',
@@ -171,13 +171,13 @@ class ShipmentDetails extends Base
             'type' => 'ProductCode',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL product code 
+            'comment' => 'Dhl product code 
 			D : US Overnight  (>0.5 lb) and Worldwide Express Non-dutiable  (>0.5 lb) 
 			X : USA Express Envelope   (less than or  = 0.5 lb) and Worldwide Express-International Express Envelope  (less than or = 0.5 lb) 
 			W : Worldwide Express-Dutiable
-			Y : DHL Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
-			G : DHL Second Day . Weight > 0.5 lb or not an express envelop
-			T : DHL Ground Shipments',
+			Y : Dhl Second Day Express . Must be Express Envelop with weight lessthan or = 0.5 lb
+			G : Dhl Second Day . Weight > 0.5 lb or not an express envelop
+			T : Dhl Ground Shipments',
             'pattern' => '([A-Z0-9])*',
             'minLength' => '1',
             'maxLength' => '4',
@@ -231,7 +231,7 @@ class ShipmentDetails extends Base
             'type' => 'PackageType',
             'required' => false,
             'subobject' => false,
-            'comment' => 'Package Type (EE: DHL Express Envelope, OD:Other DHL Packaging, CP:Customer-provided.Ground shipments must choose CP)',
+            'comment' => 'Package Type (EE: Dhl Express Envelope, OD:Other Dhl Packaging, CP:Customer-provided.Ground shipments must choose CP)',
             'length' => '2',
             'enumeration' => 'EE,OD,CP',
         ), 

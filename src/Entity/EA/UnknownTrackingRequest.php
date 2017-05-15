@@ -16,14 +16,14 @@
 
 /**
  * File:        UnknownTrackingRequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\EA; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\EA; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -40,19 +40,19 @@ use DHL\Entity\Base;
  *	@method null addLanguageCode($LanguageCode = null)
  *	(ISO Language Code)
  *	@property null $AccountNumber
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addAccountNumber($AccountNumber = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@property null $ShipperReference
  *	@method null addShipperReference($ShipperReference = null)
- *	@property \DHL\Datatype\EA\ShipmentDate $ShipmentDate
- *	@method \DHL\Datatype\EA\ShipmentDate addShipmentDate(\DHL\Datatype\EA\ShipmentDate $ShipmentDate)
+ *	@property \Dhl\Datatype\EA\ShipmentDate $ShipmentDate
+ *	@method \Dhl\Datatype\EA\ShipmentDate addShipmentDate(\Dhl\Datatype\EA\ShipmentDate $ShipmentDate)
  *	@property null $CountryCode
  *	(ISO country codes)
  *	@method null addCountryCode($CountryCode = null)
  *	(ISO country codes)
  *
- * UnknownTrackingRequest Request model for DHL API
+ * UnknownTrackingRequest Request model for Dhl API
  */
 class UnknownTrackingRequest extends Base
 {
@@ -89,7 +89,7 @@ class UnknownTrackingRequest extends Base
             'type' => 'string',
             'required' => true,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxInclusive' => '9999999999',
             'minInclusive' => '100000000',
         ), 

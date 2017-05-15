@@ -16,19 +16,19 @@
 
 /**
  * File:        Service.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL;
-use DHL\Entity\GB\ShipmentRequest;
-use DHL\Entity\GB\ShipmentResponse;
-use DHL\Client\Web as WebserviceClient;
+namespace Dhl;
+use Dhl\Entity\GB\ShipmentRequest;
+use Dhl\Entity\GB\ShipmentResponse;
+use Dhl\Client\Web as WebserviceClient;
 
 /**
- * A service class that wraps the main calls that can be done to DHL 
+ * A service class that wraps the main calls that can be done to Dhl 
  */
 class Service
 {
@@ -39,7 +39,7 @@ class Service
     public $errorMessage = null;
 
     /**
-     * Client to DHL webservice
+     * Client to Dhl webservice
      * @var WebserviceClient
      */
     protected $_client = null;
@@ -53,7 +53,7 @@ class Service
     }
 
     /**
-     * Send a shipment request to DHL
+     * Send a shipment request to Dhl
      *
      * @param ShipmentRequest $request Request to send
      *   
@@ -61,7 +61,7 @@ class Service
      */
     public function sendShipmentRequest(ShipmentRequest $request)
     {
-        // Call DHL XML API
+        // Call Dhl XML API
         try 
         {
             $xml = $this->_client->call($request);

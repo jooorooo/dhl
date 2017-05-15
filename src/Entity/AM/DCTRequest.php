@@ -16,14 +16,14 @@
 
 /**
  * File:        DCTRequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AM; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AM; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,10 +35,10 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\AM\GetCapability $GetCapability
- *	@method \DHL\Datatype\AM\GetCapability addGetCapability(\DHL\Datatype\AM\GetCapability $GetCapability)
+ *	@property \Dhl\Datatype\AM\GetCapability $GetCapability
+ *	@method \Dhl\Datatype\AM\GetCapability addGetCapability(\Dhl\Datatype\AM\GetCapability $GetCapability)
  *
- * DCTRequest Request model for DHL API
+ * DCTRequest Request model for Dhl API
  */
 class DCTRequest extends Base
 {

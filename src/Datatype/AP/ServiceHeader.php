@@ -16,14 +16,14 @@
 
 /**
  * File:        ServiceHeader.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AP; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AP; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -42,7 +42,7 @@ use DHL\Datatype\Base;
  *	@method null addPassword($Password = null)
  *	(Password used for verifying the sender)
  *
- * ServiceHeader Request model for DHL API
+ * ServiceHeader Request model for Dhl API
  */
 class ServiceHeader extends Base
 {

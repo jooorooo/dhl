@@ -16,14 +16,14 @@
 
 /**
  * File:        ModifyPickupRequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AP; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AP; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -39,8 +39,8 @@ use DHL\Entity\Base;
  *	@method null addConfirmationNumber($ConfirmationNumber = null)
  *	@property null $Requestor
  *	@method null addRequestor($Requestor = null)
- *	@property \DHL\Datatype\AP\Place $Place
- *	@method \DHL\Datatype\AP\Place addPlace(\DHL\Datatype\AP\Place $Place)
+ *	@property \Dhl\Datatype\AP\Place $Place
+ *	@method \Dhl\Datatype\AP\Place addPlace(\Dhl\Datatype\AP\Place $Place)
  *	@property null $Pickup
  *	@method null addPickup($Pickup = null)
  *	@property null $PickupContact
@@ -48,7 +48,7 @@ use DHL\Entity\Base;
  *	@property null $OriginSvcArea
  *	@method null addOriginSvcArea($OriginSvcArea = null)
  *
- * ModifyPickupRequest Request model for DHL API
+ * ModifyPickupRequest Request model for Dhl API
  */
 class ModifyPickupRequest extends Base
 {

@@ -16,14 +16,14 @@
 
 /**
  * File:        ShipmentValidateResponse.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AP; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AP; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,10 +35,10 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\AP\Response $Response
- *	@method \DHL\Datatype\AP\Response addResponse(\DHL\Datatype\AP\Response $Response)
- *	@property \DHL\Datatype\AP\Note $Note
- *	@method \DHL\Datatype\AP\Note addNote(\DHL\Datatype\AP\Note $Note)
+ *	@property \Dhl\Datatype\AP\Response $Response
+ *	@method \Dhl\Datatype\AP\Response addResponse(\Dhl\Datatype\AP\Response $Response)
+ *	@property \Dhl\Datatype\AP\Note $Note
+ *	@method \Dhl\Datatype\AP\Note addNote(\Dhl\Datatype\AP\Note $Note)
  *	@property null $AirwayBillNumber
  *	@method null addAirwayBillNumber($AirwayBillNumber = null)
  *	@property null $BillingCode
@@ -51,16 +51,16 @@ use DHL\Entity\Base;
  *	(ISO currency code)
  *	@property null $CourierMessage
  *	@method null addCourierMessage($CourierMessage = null)
- *	@property null $DHLRoutingCode
+ *	@property null $DhlRoutingCode
  *	(Routing Code Text)
- *	@method null addDHLRoutingCode($DHLRoutingCode = null)
+ *	@method null addDhlRoutingCode($DhlRoutingCode = null)
  *	(Routing Code Text)
- *	@property null $DHLRoutingDataId
- *	@method null addDHLRoutingDataId($DHLRoutingDataId = null)
- *	@property \DHL\Datatype\AP\DestinationServiceArea $DestinationServiceArea
- *	@method \DHL\Datatype\AP\DestinationServiceArea addDestinationServiceArea(\DHL\Datatype\AP\DestinationServiceArea $DestinationServiceArea)
- *	@property \DHL\Datatype\AP\OriginServiceArea $OriginServiceArea
- *	@method \DHL\Datatype\AP\OriginServiceArea addOriginServiceArea(\DHL\Datatype\AP\OriginServiceArea $OriginServiceArea)
+ *	@property null $DhlRoutingDataId
+ *	@method null addDhlRoutingDataId($DhlRoutingDataId = null)
+ *	@property \Dhl\Datatype\AP\DestinationServiceArea $DestinationServiceArea
+ *	@method \Dhl\Datatype\AP\DestinationServiceArea addDestinationServiceArea(\Dhl\Datatype\AP\DestinationServiceArea $DestinationServiceArea)
+ *	@property \Dhl\Datatype\AP\OriginServiceArea $OriginServiceArea
+ *	@method \Dhl\Datatype\AP\OriginServiceArea addOriginServiceArea(\Dhl\Datatype\AP\OriginServiceArea $OriginServiceArea)
  *	@property null $ProductContentCode
  *	@method null addProductContentCode($ProductContentCode = null)
  *	@property null $ProductShortName
@@ -73,8 +73,8 @@ use DHL\Entity\Base;
  *	@method null addDeliveryDateCode($DeliveryDateCode = null)
  *	@property null $DeliveryTimeCode
  *	@method null addDeliveryTimeCode($DeliveryTimeCode = null)
- *	@property \DHL\Datatype\AP\Pieces $Pieces
- *	@method \DHL\Datatype\AP\Pieces addPieces(\DHL\Datatype\AP\Pieces $Pieces)
+ *	@property \Dhl\Datatype\AP\Pieces $Pieces
+ *	@method \Dhl\Datatype\AP\Pieces addPieces(\Dhl\Datatype\AP\Pieces $Pieces)
  *	@property null $PackageCharge
  *	(PackageCharge)
  *	@method null addPackageCharge($PackageCharge = null)
@@ -107,52 +107,52 @@ use DHL\Entity\Base;
  *	(ISO country codes)
  *	@method null addCountryCode($CountryCode = null)
  *	(ISO country codes)
- *	@property \DHL\Datatype\AP\string $Barcodes
- *	@method \DHL\Datatype\AP\string addBarcodes(\DHL\Datatype\AP\string $Barcodes)
- *	@property \DHL\Datatype\AP\Piece $Piece
- *	@method \DHL\Datatype\AP\Piece addPiece(\DHL\Datatype\AP\Piece $Piece)
+ *	@property \Dhl\Datatype\AP\string $Barcodes
+ *	@method \Dhl\Datatype\AP\string addBarcodes(\Dhl\Datatype\AP\string $Barcodes)
+ *	@property \Dhl\Datatype\AP\Piece $Piece
+ *	@method \Dhl\Datatype\AP\Piece addPiece(\Dhl\Datatype\AP\Piece $Piece)
  *	@property null $Contents
  *	@method null addContents($Contents = null)
- *	@property \DHL\Datatype\AP\Reference $Reference
- *	@method \DHL\Datatype\AP\Reference addReference(\DHL\Datatype\AP\Reference $Reference)
- *	@property \DHL\Datatype\AP\Consignee $Consignee
- *	@method \DHL\Datatype\AP\Consignee addConsignee(\DHL\Datatype\AP\Consignee $Consignee)
- *	@property \DHL\Datatype\AP\Shipper $Shipper
- *	@method \DHL\Datatype\AP\Shipper addShipper(\DHL\Datatype\AP\Shipper $Shipper)
+ *	@property \Dhl\Datatype\AP\Reference $Reference
+ *	@method \Dhl\Datatype\AP\Reference addReference(\Dhl\Datatype\AP\Reference $Reference)
+ *	@property \Dhl\Datatype\AP\Consignee $Consignee
+ *	@method \Dhl\Datatype\AP\Consignee addConsignee(\Dhl\Datatype\AP\Consignee $Consignee)
+ *	@property \Dhl\Datatype\AP\Shipper $Shipper
+ *	@method \Dhl\Datatype\AP\Shipper addShipper(\Dhl\Datatype\AP\Shipper $Shipper)
  *	@property null $AccountNumber
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addAccountNumber($AccountNumber = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@property null $CustomerID
  *	@method null addCustomerID($CustomerID = null)
- *	@property \DHL\Datatype\AP\ShipmentDate $ShipmentDate
- *	@method \DHL\Datatype\AP\ShipmentDate addShipmentDate(\DHL\Datatype\AP\ShipmentDate $ShipmentDate)
+ *	@property \Dhl\Datatype\AP\ShipmentDate $ShipmentDate
+ *	@method \Dhl\Datatype\AP\ShipmentDate addShipmentDate(\Dhl\Datatype\AP\ShipmentDate $ShipmentDate)
  *	@property null $GlobalProductCode
  *	@method null addGlobalProductCode($GlobalProductCode = null)
- *	@property \DHL\Datatype\AP\SpecialService $SpecialService
- *	@method \DHL\Datatype\AP\SpecialService addSpecialService(\DHL\Datatype\AP\SpecialService $SpecialService)
- *	@property \DHL\Datatype\AP\Billing $Billing
- *	@method \DHL\Datatype\AP\Billing addBilling(\DHL\Datatype\AP\Billing $Billing)
- *	@property \DHL\Datatype\AP\Dutiable $Dutiable
- *	@method \DHL\Datatype\AP\Dutiable addDutiable(\DHL\Datatype\AP\Dutiable $Dutiable)
- *	@property \DHL\Datatype\AP\ExportDeclaration $ExportDeclaration
- *	@method \DHL\Datatype\AP\ExportDeclaration addExportDeclaration(\DHL\Datatype\AP\ExportDeclaration $ExportDeclaration)
+ *	@property \Dhl\Datatype\AP\SpecialService $SpecialService
+ *	@method \Dhl\Datatype\AP\SpecialService addSpecialService(\Dhl\Datatype\AP\SpecialService $SpecialService)
+ *	@property \Dhl\Datatype\AP\Billing $Billing
+ *	@method \Dhl\Datatype\AP\Billing addBilling(\Dhl\Datatype\AP\Billing $Billing)
+ *	@property \Dhl\Datatype\AP\Dutiable $Dutiable
+ *	@method \Dhl\Datatype\AP\Dutiable addDutiable(\Dhl\Datatype\AP\Dutiable $Dutiable)
+ *	@property \Dhl\Datatype\AP\ExportDeclaration $ExportDeclaration
+ *	@method \Dhl\Datatype\AP\ExportDeclaration addExportDeclaration(\Dhl\Datatype\AP\ExportDeclaration $ExportDeclaration)
  *	@property null $NewShipper
  *	@method null addNewShipper($NewShipper = null)
  *	@property null $PLTStatus
  *	(PLTStatus)
  *	@method null addPLTStatus($PLTStatus = null)
  *	(PLTStatus)
- *	@property \DHL\Datatype\AP\QtdSInAdCur $QtdSInAdCur
- *	@method \DHL\Datatype\AP\QtdSInAdCur addQtdSInAdCur(\DHL\Datatype\AP\QtdSInAdCur $QtdSInAdCur)
- *	@property \DHL\Datatype\AP\LabelImage $LabelImage
- *	@method \DHL\Datatype\AP\LabelImage addLabelImage(\DHL\Datatype\AP\LabelImage $LabelImage)
+ *	@property \Dhl\Datatype\AP\QtdSInAdCur $QtdSInAdCur
+ *	@method \Dhl\Datatype\AP\QtdSInAdCur addQtdSInAdCur(\Dhl\Datatype\AP\QtdSInAdCur $QtdSInAdCur)
+ *	@property \Dhl\Datatype\AP\LabelImage $LabelImage
+ *	@method \Dhl\Datatype\AP\LabelImage addLabelImage(\Dhl\Datatype\AP\LabelImage $LabelImage)
  *	@property null $CustData
  *	(CustData)
  *	@method null addCustData($CustData = null)
  *	(CustData)
  *
- * ShipmentValidateResponse Request model for DHL API
+ * ShipmentValidateResponse Request model for Dhl API
  */
 class ShipmentValidateResponse extends Base
 {
@@ -216,13 +216,13 @@ class ShipmentValidateResponse extends Base
             'required' => false,
             'subobject' => false,
         ), 
-        'DHLRoutingCode' => array(
+        'DhlRoutingCode' => array(
             'type' => 'string',
             'required' => false,
             'subobject' => false,
             'comment' => 'Routing Code Text',
         ), 
-        'DHLRoutingDataId' => array(
+        'DhlRoutingDataId' => array(
             'type' => 'string',
             'required' => false,
             'subobject' => false,
@@ -373,7 +373,7 @@ class ShipmentValidateResponse extends Base
             'type' => 'string',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxInclusive' => '9999999999',
             'minInclusive' => '100000000',
         ), 

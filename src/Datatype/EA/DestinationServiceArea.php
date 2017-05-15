@@ -16,21 +16,21 @@
 
 /**
  * File:        DestinationServiceArea.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
  *	@property null $ServiceAreaCode
- *	(DHL service area code)
+ *	(Dhl service area code)
  *	@method null addServiceAreaCode($ServiceAreaCode = null)
- *	(DHL service area code)
+ *	(Dhl service area code)
  *	@property null $Description
  *	@method null addDescription($Description = null)
  *	@property null $FacilityCode
@@ -42,7 +42,7 @@ use DHL\Datatype\Base;
  *	@method null addInboundSortCode($InboundSortCode = null)
  *	(InBound Sort Code)
  *
- * DestinationServiceArea Request model for DHL API
+ * DestinationServiceArea Request model for Dhl API
  */
 class DestinationServiceArea extends Base
 {
@@ -61,7 +61,7 @@ class DestinationServiceArea extends Base
             'type' => 'ServiceAreaCode',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL service area code',
+            'comment' => 'Dhl service area code',
             'length' => '3',
         ), 
         'Description' => array(

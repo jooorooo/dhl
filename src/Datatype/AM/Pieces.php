@@ -16,21 +16,21 @@
 
 /**
  * File:        Pieces.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
- *	@property \DHL\Datatype\AM\Piece $Piece
- *	@method \DHL\Datatype\AM\Piece addPiece(\DHL\Datatype\AM\Piece $Piece)
+ *	@property \Dhl\Datatype\AM\Piece $Piece
+ *	@method \Dhl\Datatype\AM\Piece addPiece(\Dhl\Datatype\AM\Piece $Piece)
  *
- * Pieces Request model for DHL API
+ * Pieces Request model for Dhl API
  */
 class Pieces extends Base
 {

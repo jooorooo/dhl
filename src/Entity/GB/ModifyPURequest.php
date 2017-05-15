@@ -16,14 +16,14 @@
 
 /**
  * File:        ModifyPURequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\GB; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\GB; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -43,8 +43,8 @@ use DHL\Entity\Base;
  *	@method null addConfirmationNumber($ConfirmationNumber = null)
  *	@property null $Requestor
  *	@method null addRequestor($Requestor = null)
- *	@property \DHL\Datatype\GB\Place $Place
- *	@method \DHL\Datatype\GB\Place addPlace(\DHL\Datatype\GB\Place $Place)
+ *	@property \Dhl\Datatype\GB\Place $Place
+ *	@method \Dhl\Datatype\GB\Place addPlace(\Dhl\Datatype\GB\Place $Place)
  *	@property null $Pickup
  *	@method null addPickup($Pickup = null)
  *	@property null $PickupContact
@@ -52,7 +52,7 @@ use DHL\Entity\Base;
  *	@property null $OriginSvcArea
  *	@method null addOriginSvcArea($OriginSvcArea = null)
  *
- * ModifyPURequest Request model for DHL API
+ * ModifyPURequest Request model for Dhl API
  */
 class ModifyPURequest extends Base
 {

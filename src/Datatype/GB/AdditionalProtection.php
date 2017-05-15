@@ -16,14 +16,14 @@
 
 /**
  * File:        AdditionalProtection.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -36,7 +36,7 @@ use DHL\Datatype\Base;
  *	@method null addValue($Value = null)
  *	(Value)
  *
- * AdditionalProtection Request model for DHL API
+ * AdditionalProtection Request model for Dhl API
  */
 class AdditionalProtection extends Base
 {

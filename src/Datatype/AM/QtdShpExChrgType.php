@@ -16,14 +16,14 @@
 
 /**
  * File:        QtdShpExChrgType.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -32,7 +32,7 @@ use DHL\Datatype\Base;
  *	@property null $LocalSpecialServiceType
  *	@method null addLocalSpecialServiceType($LocalSpecialServiceType = null)
  *
- * QtdShpExChrgType Request model for DHL API
+ * QtdShpExChrgType Request model for Dhl API
  */
 class QtdShpExChrgType extends Base
 {

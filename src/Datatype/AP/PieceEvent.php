@@ -16,14 +16,14 @@
 
 /**
  * File:        PieceEvent.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AP; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AP; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -31,14 +31,14 @@ use DHL\Datatype\Base;
  *	@method null addDate($Date = null)
  *	@property null $Time
  *	@method null addTime($Time = null)
- *	@property \DHL\Datatype\AP\ServiceEvent $ServiceEvent
- *	@method \DHL\Datatype\AP\ServiceEvent addServiceEvent(\DHL\Datatype\AP\ServiceEvent $ServiceEvent)
+ *	@property \Dhl\Datatype\AP\ServiceEvent $ServiceEvent
+ *	@method \Dhl\Datatype\AP\ServiceEvent addServiceEvent(\Dhl\Datatype\AP\ServiceEvent $ServiceEvent)
  *	@property null $Signatory
  *	@method null addSignatory($Signatory = null)
- *	@property \DHL\Datatype\AP\ServiceArea $ServiceArea
- *	@method \DHL\Datatype\AP\ServiceArea addServiceArea(\DHL\Datatype\AP\ServiceArea $ServiceArea)
+ *	@property \Dhl\Datatype\AP\ServiceArea $ServiceArea
+ *	@method \Dhl\Datatype\AP\ServiceArea addServiceArea(\Dhl\Datatype\AP\ServiceArea $ServiceArea)
  *
- * PieceEvent Request model for DHL API
+ * PieceEvent Request model for Dhl API
  */
 class PieceEvent extends Base
 {

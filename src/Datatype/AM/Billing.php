@@ -16,39 +16,39 @@
 
 /**
  * File:        Billing.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
  *	@property null $ShipperAccountNumber
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addShipperAccountNumber($ShipperAccountNumber = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@property null $ShippingPaymentType
  *	(payment type (S:Shipper,R:Recipient,T:Third Party,C:Credit Card))
  *	@method null addShippingPaymentType($ShippingPaymentType = null)
  *	(payment type (S:Shipper,R:Recipient,T:Third Party,C:Credit Card))
  *	@property null $BillingAccountNumber
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addBillingAccountNumber($BillingAccountNumber = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@property null $DutyPaymentType
  *	(Duty and tax charge payment type (S:Shipper, R:Recipient, T:Third Party/Other))
  *	@method null addDutyPaymentType($DutyPaymentType = null)
  *	(Duty and tax charge payment type (S:Shipper, R:Recipient, T:Third Party/Other))
  *	@property null $DutyAccountNumber
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addDutyAccountNumber($DutyAccountNumber = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *
- * Billing Request model for DHL API
+ * Billing Request model for Dhl API
  */
 class Billing extends Base
 {
@@ -67,7 +67,7 @@ class Billing extends Base
             'type' => 'AccountNumber',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxInclusive' => '9999999999',
             'minInclusive' => '100000000',
         ), 
@@ -83,7 +83,7 @@ class Billing extends Base
             'type' => 'AccountNumber',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxInclusive' => '9999999999',
             'minInclusive' => '100000000',
         ), 
@@ -99,7 +99,7 @@ class Billing extends Base
             'type' => 'AccountNumber',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxInclusive' => '9999999999',
             'minInclusive' => '100000000',
         ), 

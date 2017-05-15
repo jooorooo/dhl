@@ -16,14 +16,14 @@
 
 /**
  * File:        Piece.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -32,13 +32,13 @@ use DHL\Datatype\Base;
  *	@method null addPieceID($PieceID = null)
  *	(Piece ID)
  *	@property null $PackageType
- *	(Package Type (EE: DHL Express Envelope, OD:Other
- *	DHL Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
- *	Box, DF-DHL Flyer, YP-Your packaging))
+ *	(Package Type (EE: Dhl Express Envelope, OD:Other
+ *	Dhl Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
+ *	Box, DF-Dhl Flyer, YP-Your packaging))
  *	@method null addPackageType($PackageType = null)
- *	(Package Type (EE: DHL Express Envelope, OD:Other
- *	DHL Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
- *	Box, DF-DHL Flyer, YP-Your packaging))
+ *	(Package Type (EE: Dhl Express Envelope, OD:Other
+ *	Dhl Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
+ *	Box, DF-Dhl Flyer, YP-Your packaging))
  *	@property null $Weight
  *	(Weight of piece or shipment)
  *	@method null addWeight($Weight = null)
@@ -58,7 +58,7 @@ use DHL\Datatype\Base;
  *	@method null addPieceContents($PieceContents = null)
  *	(Piece contents description)
  *
- * Piece Request model for DHL API
+ * Piece Request model for Dhl API
  */
 class Piece extends Base
 {
@@ -84,9 +84,9 @@ class Piece extends Base
             'type' => 'PackageType',
             'required' => false,
             'subobject' => false,
-            'comment' => 'Package Type (EE: DHL Express Envelope, OD:Other
-				DHL Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
-				Box, DF-DHL Flyer, YP-Your packaging)',
+            'comment' => 'Package Type (EE: Dhl Express Envelope, OD:Other
+				Dhl Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
+				Box, DF-Dhl Flyer, YP-Your packaging)',
             'length' => '2',
             'enumeration' => 'BD,BP,CP,DC,DF,DM,ED,EE,FR,JB,JD,JJ,JP,OD,PA,YP',
         ), 

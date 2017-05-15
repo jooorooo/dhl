@@ -16,21 +16,21 @@
 
 /**
  * File:        Fault.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
- *	@property \DHL\Datatype\AM\PieceFault $PieceFault
- *	@method \DHL\Datatype\AM\PieceFault addPieceFault(\DHL\Datatype\AM\PieceFault $PieceFault)
+ *	@property \Dhl\Datatype\AM\PieceFault $PieceFault
+ *	@method \Dhl\Datatype\AM\PieceFault addPieceFault(\Dhl\Datatype\AM\PieceFault $PieceFault)
  *
- * Fault Request model for DHL API
+ * Fault Request model for Dhl API
  */
 class Fault extends Base
 {

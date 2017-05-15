@@ -16,14 +16,14 @@
 
 /**
  * File:        ShipmentEvent.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -31,16 +31,16 @@ use DHL\Datatype\Base;
  *	@method null addDate($Date = null)
  *	@property null $Time
  *	@method null addTime($Time = null)
- *	@property \DHL\Datatype\EA\ServiceEvent $ServiceEvent
- *	@method \DHL\Datatype\EA\ServiceEvent addServiceEvent(\DHL\Datatype\EA\ServiceEvent $ServiceEvent)
+ *	@property \Dhl\Datatype\EA\ServiceEvent $ServiceEvent
+ *	@method \Dhl\Datatype\EA\ServiceEvent addServiceEvent(\Dhl\Datatype\EA\ServiceEvent $ServiceEvent)
  *	@property null $Signatory
  *	@method null addSignatory($Signatory = null)
- *	@property \DHL\Datatype\EA\EventRemarks $EventRemarks
- *	@method \DHL\Datatype\EA\EventRemarks addEventRemarks(\DHL\Datatype\EA\EventRemarks $EventRemarks)
- *	@property \DHL\Datatype\EA\ServiceArea $ServiceArea
- *	@method \DHL\Datatype\EA\ServiceArea addServiceArea(\DHL\Datatype\EA\ServiceArea $ServiceArea)
+ *	@property \Dhl\Datatype\EA\EventRemarks $EventRemarks
+ *	@method \Dhl\Datatype\EA\EventRemarks addEventRemarks(\Dhl\Datatype\EA\EventRemarks $EventRemarks)
+ *	@property \Dhl\Datatype\EA\ServiceArea $ServiceArea
+ *	@method \Dhl\Datatype\EA\ServiceArea addServiceArea(\Dhl\Datatype\EA\ServiceArea $ServiceArea)
  *
- * ShipmentEvent Request model for DHL API
+ * ShipmentEvent Request model for Dhl API
  */
 class ShipmentEvent extends Base
 {

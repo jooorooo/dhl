@@ -16,14 +16,14 @@
 
 /**
  * File:        LabelImage.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -38,7 +38,7 @@ use DHL\Datatype\Base;
  *	@property null $OutputImageNPC
  *	@method null addOutputImageNPC($OutputImageNPC = null)
  *
- * LabelImage Request model for DHL API
+ * LabelImage Request model for Dhl API
  */
 class LabelImage extends Base
 {

@@ -16,14 +16,14 @@
 
 /**
  * File:        QtdShpType.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -31,10 +31,10 @@ use DHL\Datatype\Base;
  *	@method null addGlobalProductCode($GlobalProductCode = null)
  *	@property null $LocalProductCode
  *	@method null addLocalProductCode($LocalProductCode = null)
- *	@property \DHL\Datatype\AM\QtdShpExChrgType $QtdShpExChrg
- *	@method \DHL\Datatype\AM\QtdShpExChrgType addQtdShpExChrg(\DHL\Datatype\AM\QtdShpExChrgType $QtdShpExChrg)
+ *	@property \Dhl\Datatype\AM\QtdShpExChrgType $QtdShpExChrg
+ *	@method \Dhl\Datatype\AM\QtdShpExChrgType addQtdShpExChrg(\Dhl\Datatype\AM\QtdShpExChrgType $QtdShpExChrg)
  *
- * QtdShpType Request model for DHL API
+ * QtdShpType Request model for Dhl API
  */
 class QtdShpType extends Base
 {

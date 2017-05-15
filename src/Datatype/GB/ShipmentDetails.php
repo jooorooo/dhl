@@ -16,14 +16,14 @@
 
 /**
  * File:        ShipmentDetails.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -66,13 +66,13 @@ use DHL\Datatype\Base;
  *	@method null addInsuredAmount($InsuredAmount = null)
  *	(Monetary amount (with 2 decimal precision))
  *	@property null $PackageType
- *	(Package Type (EE: DHL Express Envelope, OD:Other
- *	DHL Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
- *	Box, DF-DHL Flyer, YP-Your packaging))
+ *	(Package Type (EE: Dhl Express Envelope, OD:Other
+ *	Dhl Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
+ *	Box, DF-Dhl Flyer, YP-Your packaging))
  *	@method null addPackageType($PackageType = null)
- *	(Package Type (EE: DHL Express Envelope, OD:Other
- *	DHL Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
- *	Box, DF-DHL Flyer, YP-Your packaging))
+ *	(Package Type (EE: Dhl Express Envelope, OD:Other
+ *	Dhl Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
+ *	Box, DF-Dhl Flyer, YP-Your packaging))
  *	@property null $IsDutiable
  *	(Boolean flag)
  *	@method null addIsDutiable($IsDutiable = null)
@@ -81,8 +81,8 @@ use DHL\Datatype\Base;
  *	(ISO currency code)
  *	@method null addCurrencyCode($CurrencyCode = null)
  *	(ISO currency code)
- *	@property \DHL\Datatype\GB\AdditionalProtection $AdditionalProtection
- *	@method \DHL\Datatype\GB\AdditionalProtection addAdditionalProtection(\DHL\Datatype\GB\AdditionalProtection $AdditionalProtection)
+ *	@property \Dhl\Datatype\GB\AdditionalProtection $AdditionalProtection
+ *	@method \Dhl\Datatype\GB\AdditionalProtection addAdditionalProtection(\Dhl\Datatype\GB\AdditionalProtection $AdditionalProtection)
  *	@property null $DOSFlag
  *	(Boolean flag)
  *	@method null addDOSFlag($DOSFlag = null)
@@ -92,7 +92,7 @@ use DHL\Datatype\Base;
  *	@method null addCustData($CustData = null)
  *	(CustData)
  *
- * ShipmentDetails Request model for DHL API
+ * ShipmentDetails Request model for Dhl API
  */
 class ShipmentDetails extends Base
 {
@@ -198,9 +198,9 @@ class ShipmentDetails extends Base
             'type' => 'PackageType',
             'required' => false,
             'subobject' => false,
-            'comment' => 'Package Type (EE: DHL Express Envelope, OD:Other
-				DHL Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
-				Box, DF-DHL Flyer, YP-Your packaging)',
+            'comment' => 'Package Type (EE: Dhl Express Envelope, OD:Other
+				Dhl Packaging, CP:Customer-provided, JB-Jumbo box, JJ-Junior jumbo
+				Box, DF-Dhl Flyer, YP-Your packaging)',
             'length' => '2',
             'enumeration' => 'BD,BP,CP,DC,DF,DM,ED,EE,FR,JB,JD,JJ,JP,OD,PA,YP',
         ), 

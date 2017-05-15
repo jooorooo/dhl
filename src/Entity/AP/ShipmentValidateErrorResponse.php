@@ -16,14 +16,14 @@
 
 /**
  * File:        ShipmentValidateErrorResponse.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AP; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AP; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,10 +35,10 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\AP\Response $Response
- *	@method \DHL\Datatype\AP\Response addResponse(\DHL\Datatype\AP\Response $Response)
+ *	@property \Dhl\Datatype\AP\Response $Response
+ *	@method \Dhl\Datatype\AP\Response addResponse(\Dhl\Datatype\AP\Response $Response)
  *
- * ShipmentValidateErrorResponse Request model for DHL API
+ * ShipmentValidateErrorResponse Request model for Dhl API
  */
 class ShipmentValidateErrorResponse extends Base
 {

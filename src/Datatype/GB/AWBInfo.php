@@ -16,14 +16,14 @@
 
 /**
  * File:        AWBInfo.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -31,14 +31,14 @@ use DHL\Datatype\Base;
  *	(Airway bill number)
  *	@method null addAWBNumber($AWBNumber = null)
  *	(Airway bill number)
- *	@property \DHL\Datatype\GB\Status $Status
- *	@method \DHL\Datatype\GB\Status addStatus(\DHL\Datatype\GB\Status $Status)
- *	@property \DHL\Datatype\GB\ShipmentInfo $ShipmentInfo
- *	@method \DHL\Datatype\GB\ShipmentInfo addShipmentInfo(\DHL\Datatype\GB\ShipmentInfo $ShipmentInfo)
- *	@property \DHL\Datatype\GB\PieceInfo $PieceInfo
- *	@method \DHL\Datatype\GB\PieceInfo addPieceInfo(\DHL\Datatype\GB\PieceInfo $PieceInfo)
+ *	@property \Dhl\Datatype\GB\Status $Status
+ *	@method \Dhl\Datatype\GB\Status addStatus(\Dhl\Datatype\GB\Status $Status)
+ *	@property \Dhl\Datatype\GB\ShipmentInfo $ShipmentInfo
+ *	@method \Dhl\Datatype\GB\ShipmentInfo addShipmentInfo(\Dhl\Datatype\GB\ShipmentInfo $ShipmentInfo)
+ *	@property \Dhl\Datatype\GB\PieceInfo $PieceInfo
+ *	@method \Dhl\Datatype\GB\PieceInfo addPieceInfo(\Dhl\Datatype\GB\PieceInfo $PieceInfo)
  *
- * AWBInfo Request model for DHL API
+ * AWBInfo Request model for Dhl API
  */
 class AWBInfo extends Base
 {

@@ -16,17 +16,17 @@
 
 /**
  * File:        Base.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity;
-use DHL\Datatype\Base as BaseDataType;
+namespace Dhl\Entity;
+use Dhl\Datatype\Base as BaseDataType;
 
 /**
- * Abstract class for each entity model used by DHL
+ * Abstract class for each entity model used by Dhl
  */
 abstract class Base extends BaseDataType
 {
@@ -111,8 +111,8 @@ abstract class Base extends BaseDataType
     /**
      * Class constants
      */
-    const DHL_REQ = 'http://www.dhl.com';
-    const DHL_XSI = 'http://www.w3.org/2001/XMLSchema-instance';
+    const Dhl_REQ = 'http://www.dhl.com';
+    const Dhl_XSI = 'http://www.w3.org/2001/XMLSchema-instance';
 
     /**
      * Class constructor
@@ -128,7 +128,7 @@ abstract class Base extends BaseDataType
 	}
 
     /**
-     * Generates the XML to be sent to DHL
+     * Generates the XML to be sent to Dhl
      *
      * @param \XMLWriter $xmlWriter XMl Writer instance
      *   
@@ -144,9 +144,9 @@ abstract class Base extends BaseDataType
         $xmlWriter->startDocument('1.0', 'UTF-8');
             
         $xmlWriter->startElement('req:' . $this->_serviceName);
-        $xmlWriter->writeAttribute('xmlns:req', self::DHL_REQ);
-        $xmlWriter->writeAttribute('xmlns:xsi', self::DHL_XSI);
-        $xmlWriter->writeAttribute('xsi:schemaLocation', self::DHL_REQ . ' ' .$this->_serviceXSD);
+        $xmlWriter->writeAttribute('xmlns:req', self::Dhl_REQ);
+        $xmlWriter->writeAttribute('xmlns:xsi', self::Dhl_XSI);
+        $xmlWriter->writeAttribute('xsi:schemaLocation', self::Dhl_REQ . ' ' .$this->_serviceXSD);
     
         if ($this->_displaySchemaVersion) 
         {
@@ -237,7 +237,7 @@ abstract class Base extends BaseDataType
         if (!empty($xml->Response->Status->Condition->ConditionCode))
         {
             $errorMsg = ((string) $xml->Response->Status->Condition->ConditionCode) . ' : ' . ((string) $xml->Response->Status->Condition->ConditionData);
-            throw new \Exception('Error returned from DHL webservice : ' . $errorMsg);
+            throw new \Exception('Error returned from Dhl webservice : ' . $errorMsg);
         }
 
         $parts = explode('\\', get_class($this));

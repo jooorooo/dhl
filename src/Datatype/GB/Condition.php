@@ -16,14 +16,14 @@
 
 /**
  * File:        Condition.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -32,7 +32,7 @@ use DHL\Datatype\Base;
  *	@property null $ConditionData
  *	@method null addConditionData($ConditionData = null)
  *
- * Condition Request model for DHL API
+ * Condition Request model for Dhl API
  */
 class Condition extends Base
 {

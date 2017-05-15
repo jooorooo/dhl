@@ -16,39 +16,39 @@
 
 /**
  * File:        Billing.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
  *	@property null $ShipperAccountNumber
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addShipperAccountNumber($ShipperAccountNumber = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@property null $ShippingPaymentType
  *	(Shipment payment type (S:Shipper))
  *	@method null addShippingPaymentType($ShippingPaymentType = null)
  *	(Shipment payment type (S:Shipper))
  *	@property null $BillingAccountNumber
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addBillingAccountNumber($BillingAccountNumber = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@property null $DutyPaymentType
  *	(Duty and tax charge payment type (R:Recipient))
  *	@method null addDutyPaymentType($DutyPaymentType = null)
  *	(Duty and tax charge payment type (R:Recipient))
  *	@property null $DutyAccountNumber
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addDutyAccountNumber($DutyAccountNumber = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *
- * Billing Request model for DHL API
+ * Billing Request model for Dhl API
  */
 class Billing extends Base
 {
@@ -67,7 +67,7 @@ class Billing extends Base
             'type' => 'AccountNumber',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxLength' => '12',
         ), 
         'ShippingPaymentType' => array(
@@ -82,7 +82,7 @@ class Billing extends Base
             'type' => 'AccountNumber',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxLength' => '12',
         ), 
         'DutyPaymentType' => array(
@@ -97,7 +97,7 @@ class Billing extends Base
             'type' => 'AccountNumber',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxLength' => '12',
         ), 
     );

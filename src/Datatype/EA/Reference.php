@@ -16,14 +16,14 @@
 
 /**
  * File:        Reference.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -36,7 +36,7 @@ use DHL\Datatype\Base;
  *	@method null addReferenceType($ReferenceType = null)
  *	(Shipment reference type)
  *
- * Reference Request model for DHL API
+ * Reference Request model for Dhl API
  */
 class Reference extends Base
 {

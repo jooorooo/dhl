@@ -16,14 +16,14 @@
 
 /**
  * File:        ShipmentRatingResponse.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AM; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AM; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,10 +35,10 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\AM\Response $Response
- *	@method \DHL\Datatype\AM\Response addResponse(\DHL\Datatype\AM\Response $Response)
- *	@property \DHL\Datatype\AM\Note $Note
- *	@method \DHL\Datatype\AM\Note addNote(\DHL\Datatype\AM\Note $Note)
+ *	@property \Dhl\Datatype\AM\Response $Response
+ *	@method \Dhl\Datatype\AM\Response addResponse(\Dhl\Datatype\AM\Response $Response)
+ *	@property \Dhl\Datatype\AM\Note $Note
+ *	@method \Dhl\Datatype\AM\Note addNote(\Dhl\Datatype\AM\Note $Note)
  *	@property null $Rated
  *	@method null addRated($Rated = null)
  *	@property null $ShippingCharge
@@ -63,10 +63,10 @@ use DHL\Entity\Base;
  *	@method null addChargeableWeight($ChargeableWeight = null)
  *	@property null $DimensionalWeight
  *	@method null addDimensionalWeight($DimensionalWeight = null)
- *	@property \DHL\Datatype\AM\OriginServiceArea $OriginServiceArea
- *	@method \DHL\Datatype\AM\OriginServiceArea addOriginServiceArea(\DHL\Datatype\AM\OriginServiceArea $OriginServiceArea)
- *	@property \DHL\Datatype\AM\DestinationServiceArea $DestinationServiceArea
- *	@method \DHL\Datatype\AM\DestinationServiceArea addDestinationServiceArea(\DHL\Datatype\AM\DestinationServiceArea $DestinationServiceArea)
+ *	@property \Dhl\Datatype\AM\OriginServiceArea $OriginServiceArea
+ *	@method \Dhl\Datatype\AM\OriginServiceArea addOriginServiceArea(\Dhl\Datatype\AM\OriginServiceArea $OriginServiceArea)
+ *	@property \Dhl\Datatype\AM\DestinationServiceArea $DestinationServiceArea
+ *	@method \Dhl\Datatype\AM\DestinationServiceArea addDestinationServiceArea(\Dhl\Datatype\AM\DestinationServiceArea $DestinationServiceArea)
  *	@property null $CurrencyCode
  *	(ISO currency code)
  *	@method null addCurrencyCode($CurrencyCode = null)
@@ -84,7 +84,7 @@ use DHL\Entity\Base;
  *	@property null $ZoneID
  *	@method null addZoneID($ZoneID = null)
  *
- * ShipmentRatingResponse Request model for DHL API
+ * ShipmentRatingResponse Request model for Dhl API
  */
 class ShipmentRatingResponse extends Base
 {

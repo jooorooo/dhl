@@ -16,14 +16,14 @@
 
 /**
  * File:        ShipmentValidateRequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\EA; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\EA; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -45,42 +45,42 @@ use DHL\Entity\Base;
  *	(Pieces Enabling Flag)
  *	@method null addPiecesEnabled($PiecesEnabled = null)
  *	(Pieces Enabling Flag)
- *	@property \DHL\Datatype\EA\Billing $Billing
- *	@method \DHL\Datatype\EA\Billing addBilling(\DHL\Datatype\EA\Billing $Billing)
- *	@property \DHL\Datatype\EA\Consignee $Consignee
- *	@method \DHL\Datatype\EA\Consignee addConsignee(\DHL\Datatype\EA\Consignee $Consignee)
- *	@property \DHL\Datatype\EA\Commodity $Commodity
- *	@method \DHL\Datatype\EA\Commodity addCommodity(\DHL\Datatype\EA\Commodity $Commodity)
- *	@property \DHL\Datatype\EA\Dutiable $Dutiable
- *	@method \DHL\Datatype\EA\Dutiable addDutiable(\DHL\Datatype\EA\Dutiable $Dutiable)
- *	@property \DHL\Datatype\EA\ExportDeclaration $ExportDeclaration
- *	@method \DHL\Datatype\EA\ExportDeclaration addExportDeclaration(\DHL\Datatype\EA\ExportDeclaration $ExportDeclaration)
- *	@property \DHL\Datatype\EA\Reference $Reference
- *	@method \DHL\Datatype\EA\Reference addReference(\DHL\Datatype\EA\Reference $Reference)
- *	@property \DHL\Datatype\EA\ShipmentDetails $ShipmentDetails
- *	@method \DHL\Datatype\EA\ShipmentDetails addShipmentDetails(\DHL\Datatype\EA\ShipmentDetails $ShipmentDetails)
- *	@property \DHL\Datatype\EA\Shipper $Shipper
- *	@method \DHL\Datatype\EA\Shipper addShipper(\DHL\Datatype\EA\Shipper $Shipper)
- *	@property \DHL\Datatype\EA\SpecialService $SpecialService
- *	@method \DHL\Datatype\EA\SpecialService addSpecialService(\DHL\Datatype\EA\SpecialService $SpecialService)
- *	@property \DHL\Datatype\EA\Place $Place
- *	@method \DHL\Datatype\EA\Place addPlace(\DHL\Datatype\EA\Place $Place)
+ *	@property \Dhl\Datatype\EA\Billing $Billing
+ *	@method \Dhl\Datatype\EA\Billing addBilling(\Dhl\Datatype\EA\Billing $Billing)
+ *	@property \Dhl\Datatype\EA\Consignee $Consignee
+ *	@method \Dhl\Datatype\EA\Consignee addConsignee(\Dhl\Datatype\EA\Consignee $Consignee)
+ *	@property \Dhl\Datatype\EA\Commodity $Commodity
+ *	@method \Dhl\Datatype\EA\Commodity addCommodity(\Dhl\Datatype\EA\Commodity $Commodity)
+ *	@property \Dhl\Datatype\EA\Dutiable $Dutiable
+ *	@method \Dhl\Datatype\EA\Dutiable addDutiable(\Dhl\Datatype\EA\Dutiable $Dutiable)
+ *	@property \Dhl\Datatype\EA\ExportDeclaration $ExportDeclaration
+ *	@method \Dhl\Datatype\EA\ExportDeclaration addExportDeclaration(\Dhl\Datatype\EA\ExportDeclaration $ExportDeclaration)
+ *	@property \Dhl\Datatype\EA\Reference $Reference
+ *	@method \Dhl\Datatype\EA\Reference addReference(\Dhl\Datatype\EA\Reference $Reference)
+ *	@property \Dhl\Datatype\EA\ShipmentDetails $ShipmentDetails
+ *	@method \Dhl\Datatype\EA\ShipmentDetails addShipmentDetails(\Dhl\Datatype\EA\ShipmentDetails $ShipmentDetails)
+ *	@property \Dhl\Datatype\EA\Shipper $Shipper
+ *	@method \Dhl\Datatype\EA\Shipper addShipper(\Dhl\Datatype\EA\Shipper $Shipper)
+ *	@property \Dhl\Datatype\EA\SpecialService $SpecialService
+ *	@method \Dhl\Datatype\EA\SpecialService addSpecialService(\Dhl\Datatype\EA\SpecialService $SpecialService)
+ *	@property \Dhl\Datatype\EA\Place $Place
+ *	@method \Dhl\Datatype\EA\Place addPlace(\Dhl\Datatype\EA\Place $Place)
  *	@property null $EProcShip
  *	@method null addEProcShip($EProcShip = null)
  *	@property null $Airwaybill
  *	@method null addAirwaybill($Airwaybill = null)
- *	@property \DHL\Datatype\EA\DocImages $DocImages
- *	@method \DHL\Datatype\EA\DocImages addDocImages(\DHL\Datatype\EA\DocImages $DocImages)
+ *	@property \Dhl\Datatype\EA\DocImages $DocImages
+ *	@method \Dhl\Datatype\EA\DocImages addDocImages(\Dhl\Datatype\EA\DocImages $DocImages)
  *	@property null $LabelImageFormat
  *	(LabelImageFormat)
  *	@method null addLabelImageFormat($LabelImageFormat = null)
  *	(LabelImageFormat)
  *	@property null $RequestArchiveDoc
  *	@method null addRequestArchiveDoc($RequestArchiveDoc = null)
- *	@property \DHL\Datatype\EA\Label $Label
- *	@method \DHL\Datatype\EA\Label addLabel(\DHL\Datatype\EA\Label $Label)
+ *	@property \Dhl\Datatype\EA\Label $Label
+ *	@method \Dhl\Datatype\EA\Label addLabel(\Dhl\Datatype\EA\Label $Label)
  *
- * ShipmentValidateRequest Request model for DHL API
+ * ShipmentValidateRequest Request model for Dhl API
  */
 class ShipmentValidateRequest extends Base
 {

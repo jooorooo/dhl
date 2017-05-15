@@ -16,18 +16,18 @@
 
 /**
  * File:        Web.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Client;
+namespace Dhl\Client;
 
-use DHL\Entity\Base as Request;
+use Dhl\Entity\Base as Request;
 
 /**
- * DHL Webservice Client
+ * Dhl Webservice Client
  */
 class Web
 {
@@ -64,11 +64,11 @@ class Web
     }
 
     /**
-     * Call DHL Service
+     * Call Dhl Service
      * 
      * @param Request $request Request to send
      * 
-     * @return string DHL XML response string
+     * @return string Dhl XML response string
      */
     public function call(Request $request)
     {

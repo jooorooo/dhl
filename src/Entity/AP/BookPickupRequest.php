@@ -16,14 +16,14 @@
 
 /**
  * File:        BookPickupRequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AP; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AP; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -37,16 +37,16 @@ use DHL\Entity\Base;
  *	@method null addPassword($Password = null)
  *	@property null $Requestor
  *	@method null addRequestor($Requestor = null)
- *	@property \DHL\Datatype\AP\Place $Place
- *	@method \DHL\Datatype\AP\Place addPlace(\DHL\Datatype\AP\Place $Place)
+ *	@property \Dhl\Datatype\AP\Place $Place
+ *	@method \Dhl\Datatype\AP\Place addPlace(\Dhl\Datatype\AP\Place $Place)
  *	@property null $Pickup
  *	@method null addPickup($Pickup = null)
  *	@property null $PickupContact
  *	@method null addPickupContact($PickupContact = null)
- *	@property \DHL\Datatype\AP\ShipmentDetails $ShipmentDetails
- *	@method \DHL\Datatype\AP\ShipmentDetails addShipmentDetails(\DHL\Datatype\AP\ShipmentDetails $ShipmentDetails)
+ *	@property \Dhl\Datatype\AP\ShipmentDetails $ShipmentDetails
+ *	@method \Dhl\Datatype\AP\ShipmentDetails addShipmentDetails(\Dhl\Datatype\AP\ShipmentDetails $ShipmentDetails)
  *
- * BookPickupRequest Request model for DHL API
+ * BookPickupRequest Request model for Dhl API
  */
 class BookPickupRequest extends Base
 {

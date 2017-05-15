@@ -16,14 +16,14 @@
 
 /**
  * File:        ShipmentCustRatingRequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AM; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AM; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,18 +35,18 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\AM\Billing $Billing
- *	@method \DHL\Datatype\AM\Billing addBilling(\DHL\Datatype\AM\Billing $Billing)
- *	@property \DHL\Datatype\AM\Shipper $Shipper
- *	@method \DHL\Datatype\AM\Shipper addShipper(\DHL\Datatype\AM\Shipper $Shipper)
- *	@property \DHL\Datatype\AM\Consignee $Consignee
- *	@method \DHL\Datatype\AM\Consignee addConsignee(\DHL\Datatype\AM\Consignee $Consignee)
- *	@property \DHL\Datatype\AM\ShipmentDetails $ShipmentDetails
- *	@method \DHL\Datatype\AM\ShipmentDetails addShipmentDetails(\DHL\Datatype\AM\ShipmentDetails $ShipmentDetails)
- *	@property \DHL\Datatype\AM\SpecialService $SpecialService
- *	@method \DHL\Datatype\AM\SpecialService addSpecialService(\DHL\Datatype\AM\SpecialService $SpecialService)
+ *	@property \Dhl\Datatype\AM\Billing $Billing
+ *	@method \Dhl\Datatype\AM\Billing addBilling(\Dhl\Datatype\AM\Billing $Billing)
+ *	@property \Dhl\Datatype\AM\Shipper $Shipper
+ *	@method \Dhl\Datatype\AM\Shipper addShipper(\Dhl\Datatype\AM\Shipper $Shipper)
+ *	@property \Dhl\Datatype\AM\Consignee $Consignee
+ *	@method \Dhl\Datatype\AM\Consignee addConsignee(\Dhl\Datatype\AM\Consignee $Consignee)
+ *	@property \Dhl\Datatype\AM\ShipmentDetails $ShipmentDetails
+ *	@method \Dhl\Datatype\AM\ShipmentDetails addShipmentDetails(\Dhl\Datatype\AM\ShipmentDetails $ShipmentDetails)
+ *	@property \Dhl\Datatype\AM\SpecialService $SpecialService
+ *	@method \Dhl\Datatype\AM\SpecialService addSpecialService(\Dhl\Datatype\AM\SpecialService $SpecialService)
  *
- * ShipmentCustRatingRequest Request model for DHL API
+ * ShipmentCustRatingRequest Request model for Dhl API
  */
 class ShipmentCustRatingRequest extends Base
 {

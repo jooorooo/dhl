@@ -16,14 +16,14 @@
 
 /**
  * File:        PieceType.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -40,7 +40,7 @@ use DHL\Datatype\Base;
  *	@property null $Weight
  *	@method null addWeight($Weight = null)
  *
- * PieceType Request model for DHL API
+ * PieceType Request model for Dhl API
  */
 class PieceType extends Base
 {

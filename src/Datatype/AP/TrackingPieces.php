@@ -16,21 +16,21 @@
 
 /**
  * File:        TrackingPieces.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AP; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AP; 
+use Dhl\Datatype\Base;
 
 /**
  *
- *	@property \DHL\Datatype\AP\PieceInfo $PieceInfo
- *	@method \DHL\Datatype\AP\PieceInfo addPieceInfo(\DHL\Datatype\AP\PieceInfo $PieceInfo)
+ *	@property \Dhl\Datatype\AP\PieceInfo $PieceInfo
+ *	@method \Dhl\Datatype\AP\PieceInfo addPieceInfo(\Dhl\Datatype\AP\PieceInfo $PieceInfo)
  *
- * TrackingPieces Request model for DHL API
+ * TrackingPieces Request model for Dhl API
  */
 class TrackingPieces extends Base
 {

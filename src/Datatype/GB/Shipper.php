@@ -16,14 +16,14 @@
 
 /**
  * File:        Shipper.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -40,9 +40,9 @@ use DHL\Datatype\Base;
  *	@method null addSuiteDepartmentName($SuiteDepartmentName = null)
  *	(SuiteDepartmentName)
  *	@property null $RegisteredAccount
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addRegisteredAccount($RegisteredAccount = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@property array $AddressLine
  *	(Address Line)
  *	@method array addAddressLine(array $AddressLine)
@@ -83,10 +83,10 @@ use DHL\Datatype\Base;
  *	@method null addFederalTaxId($FederalTaxId = null)
  *	@property null $StateTaxId
  *	@method null addStateTaxId($StateTaxId = null)
- *	@property \DHL\Datatype\GB\Contact $Contact
- *	@method \DHL\Datatype\GB\Contact addContact(\DHL\Datatype\GB\Contact $Contact)
+ *	@property \Dhl\Datatype\GB\Contact $Contact
+ *	@method \Dhl\Datatype\GB\Contact addContact(\Dhl\Datatype\GB\Contact $Contact)
  *
- * Shipper Request model for DHL API
+ * Shipper Request model for Dhl API
  */
 class Shipper extends Base
 {
@@ -127,7 +127,7 @@ class Shipper extends Base
             'type' => 'AccountNumber',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxLength' => '12',
         ), 
         'AddressLine' => array(

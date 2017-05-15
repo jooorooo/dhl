@@ -16,14 +16,14 @@
 
 /**
  * File:        BookPURequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\GB; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\GB; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -41,16 +41,16 @@ use DHL\Entity\Base;
  *	(RegionCode)
  *	@property null $Requestor
  *	@method null addRequestor($Requestor = null)
- *	@property \DHL\Datatype\GB\Place $Place
- *	@method \DHL\Datatype\GB\Place addPlace(\DHL\Datatype\GB\Place $Place)
+ *	@property \Dhl\Datatype\GB\Place $Place
+ *	@method \Dhl\Datatype\GB\Place addPlace(\Dhl\Datatype\GB\Place $Place)
  *	@property null $Pickup
  *	@method null addPickup($Pickup = null)
  *	@property null $PickupContact
  *	@method null addPickupContact($PickupContact = null)
- *	@property \DHL\Datatype\GB\ShipmentDetails $ShipmentDetails
- *	@method \DHL\Datatype\GB\ShipmentDetails addShipmentDetails(\DHL\Datatype\GB\ShipmentDetails $ShipmentDetails)
+ *	@property \Dhl\Datatype\GB\ShipmentDetails $ShipmentDetails
+ *	@method \Dhl\Datatype\GB\ShipmentDetails addShipmentDetails(\Dhl\Datatype\GB\ShipmentDetails $ShipmentDetails)
  *
- * BookPURequest Request model for DHL API
+ * BookPURequest Request model for Dhl API
  */
 class BookPURequest extends Base
 {

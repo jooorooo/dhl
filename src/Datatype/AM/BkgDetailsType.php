@@ -16,14 +16,14 @@
 
 /**
  * File:        BkgDetailsType.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -61,8 +61,8 @@ use DHL\Datatype\Base;
  *	@method null addIsDutiable($IsDutiable = null)
  *	@property null $NetworkTypeCode
  *	@method null addNetworkTypeCode($NetworkTypeCode = null)
- *	@property \DHL\Datatype\AM\QtdShpType $QtdShp
- *	@method \DHL\Datatype\AM\QtdShpType addQtdShp(\DHL\Datatype\AM\QtdShpType $QtdShp)
+ *	@property \Dhl\Datatype\AM\QtdShpType $QtdShp
+ *	@method \Dhl\Datatype\AM\QtdShpType addQtdShp(\Dhl\Datatype\AM\QtdShpType $QtdShp)
  *	@property null $CODAmount
  *	@method null addCODAmount($CODAmount = null)
  *	@property null $CODCurrencyCode
@@ -74,7 +74,7 @@ use DHL\Datatype\Base;
  *	@property null $InsuredCurrency
  *	@method null addInsuredCurrency($InsuredCurrency = null)
  *
- * BkgDetailsType Request model for DHL API
+ * BkgDetailsType Request model for Dhl API
  */
 class BkgDetailsType extends Base
 {

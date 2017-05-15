@@ -16,14 +16,14 @@
 
 /**
  * File:        BarCodes.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -33,10 +33,10 @@ use DHL\Datatype\Base;
  *	@method null addOriginDestnBarcode($OriginDestnBarcode = null)
  *	@property null $ClientIDBarCode
  *	@method null addClientIDBarCode($ClientIDBarCode = null)
- *	@property null $DHLRoutingBarCode
- *	@method null addDHLRoutingBarCode($DHLRoutingBarCode = null)
+ *	@property null $DhlRoutingBarCode
+ *	@method null addDhlRoutingBarCode($DhlRoutingBarCode = null)
  *
- * BarCodes Request model for DHL API
+ * BarCodes Request model for Dhl API
  */
 class BarCodes extends Base
 {
@@ -69,7 +69,7 @@ class BarCodes extends Base
             'subobject' => false,
             'comment' => '',
         ), 
-        'DHLRoutingBarCode' => array(
+        'DhlRoutingBarCode' => array(
             'type' => 'string',
             'required' => false,
             'subobject' => false,

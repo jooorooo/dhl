@@ -16,14 +16,14 @@
 
 /**
  * File:        Place.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -60,7 +60,7 @@ use DHL\Datatype\Base;
  *	@method null addPostalCode($PostalCode = null)
  *	(Full postal/zip code for address)
  *
- * Place Request model for DHL API
+ * Place Request model for Dhl API
  */
 class Place extends Base
 {

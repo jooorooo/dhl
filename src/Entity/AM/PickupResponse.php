@@ -16,14 +16,14 @@
 
 /**
  * File:        PickupResponse.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AM; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AM; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,10 +35,10 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\AM\Response $Response
- *	@method \DHL\Datatype\AM\Response addResponse(\DHL\Datatype\AM\Response $Response)
- *	@property \DHL\Datatype\AM\Note $Note
- *	@method \DHL\Datatype\AM\Note addNote(\DHL\Datatype\AM\Note $Note)
+ *	@property \Dhl\Datatype\AM\Response $Response
+ *	@method \Dhl\Datatype\AM\Response addResponse(\Dhl\Datatype\AM\Response $Response)
+ *	@property \Dhl\Datatype\AM\Note $Note
+ *	@method \Dhl\Datatype\AM\Note addNote(\Dhl\Datatype\AM\Note $Note)
  *	@property null $ConfirmationNumber
  *	@method null addConfirmationNumber($ConfirmationNumber = null)
  *	@property null $ReadyByTime
@@ -64,7 +64,7 @@ use DHL\Entity\Base;
  *	@method null addCountryCode($CountryCode = null)
  *	(ISO country codes)
  *
- * PickupResponse Request model for DHL API
+ * PickupResponse Request model for Dhl API
  */
 class PickupResponse extends Base
 {

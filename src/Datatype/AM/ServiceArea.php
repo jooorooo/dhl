@@ -16,25 +16,25 @@
 
 /**
  * File:        ServiceArea.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
  *	@property null $ServiceAreaCode
- *	(DHL service area code)
+ *	(Dhl service area code)
  *	@method null addServiceAreaCode($ServiceAreaCode = null)
- *	(DHL service area code)
+ *	(Dhl service area code)
  *	@property null $Description
  *	@method null addDescription($Description = null)
  *
- * ServiceArea Request model for DHL API
+ * ServiceArea Request model for Dhl API
  */
 class ServiceArea extends Base
 {
@@ -53,7 +53,7 @@ class ServiceArea extends Base
             'type' => 'ServiceAreaCode',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL service area code',
+            'comment' => 'Dhl service area code',
             'length' => '3',
         ), 
         'Description' => array(

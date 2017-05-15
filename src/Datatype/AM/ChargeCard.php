@@ -16,14 +16,14 @@
 
 /**
  * File:        ChargeCard.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -44,7 +44,7 @@ use DHL\Datatype\Base;
  *	@method null addChargeCardExpiryDate($ChargeCardExpiryDate = null)
  *	(Charge card expiration date)
  *
- * ChargeCard Request model for DHL API
+ * ChargeCard Request model for Dhl API
  */
 class ChargeCard extends Base
 {

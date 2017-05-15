@@ -16,14 +16,14 @@
 
 /**
  * File:        Shipment.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -35,8 +35,8 @@ use DHL\Datatype\Base;
  *	(Unit of weight measurement (K:KiloGram))
  *	@method null addWeightUnit($WeightUnit = null)
  *	(Unit of weight measurement (K:KiloGram))
- *	@property \DHL\Datatype\GB\Pieces $Pieces
- *	@method \DHL\Datatype\GB\Pieces addPieces(\DHL\Datatype\GB\Pieces $Pieces)
+ *	@property \Dhl\Datatype\GB\Pieces $Pieces
+ *	@method \Dhl\Datatype\GB\Pieces addPieces(\Dhl\Datatype\GB\Pieces $Pieces)
  *	@property null $DoorTo
  *	(Defines the type of delivery service that applies
  *	to the shipment)
@@ -48,10 +48,10 @@ use DHL\Datatype\Base;
  *	@method null addAirwarBillNumber($AirwarBillNumber = null)
  *	(Airway bill number)
  *	@property null $AccountType
- *	(Account Type by method of payment ( DHL account
+ *	(Account Type by method of payment ( Dhl account
  *	vs. Credit card))
  *	@method null addAccountType($AccountType = null)
- *	(Account Type by method of payment ( DHL account
+ *	(Account Type by method of payment ( Dhl account
  *	vs. Credit card))
  *	@property null $ProductType
  *	@method null addProductType($ProductType = null)
@@ -59,8 +59,8 @@ use DHL\Datatype\Base;
  *	@method null addGlobalProductType($GlobalProductType = null)
  *	@property null $LocalProductType
  *	@method null addLocalProductType($LocalProductType = null)
- *	@property \DHL\Datatype\GB\Commodity $Commodity
- *	@method \DHL\Datatype\GB\Commodity addCommodity(\DHL\Datatype\GB\Commodity $Commodity)
+ *	@property \Dhl\Datatype\GB\Commodity $Commodity
+ *	@method \Dhl\Datatype\GB\Commodity addCommodity(\Dhl\Datatype\GB\Commodity $Commodity)
  *	@property null $DeclaredValue
  *	(Monetary amount (with 2 decimal precision))
  *	@method null addDeclaredValue($DeclaredValue = null)
@@ -86,7 +86,7 @@ use DHL\Datatype\Base;
  *	@method null addDimensionalWeight($DimensionalWeight = null)
  *	(Weight of piece or shipment)
  *
- * Shipment Request model for DHL API
+ * Shipment Request model for Dhl API
  */
 class Shipment extends Base
 {
@@ -145,7 +145,7 @@ class Shipment extends Base
             'type' => 'AccountType',
             'required' => false,
             'subobject' => false,
-            'comment' => 'Account Type by method of payment ( DHL account
+            'comment' => 'Account Type by method of payment ( Dhl account
 				vs. Credit card)',
             'enumeration' => 'D',
         ), 

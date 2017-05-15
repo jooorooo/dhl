@@ -16,21 +16,21 @@
 
 /**
  * File:        BarCodes.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
  *	@property null $BarCode
  *	@method null addBarCode($BarCode = null)
  *
- * BarCodes Request model for DHL API
+ * BarCodes Request model for Dhl API
  */
 class BarCodes extends Base
 {

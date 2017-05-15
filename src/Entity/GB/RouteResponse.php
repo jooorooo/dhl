@@ -16,14 +16,14 @@
 
 /**
  * File:        RouteResponse.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\GB; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\GB; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,8 +35,8 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\GB\Response $Response
- *	@method \DHL\Datatype\GB\Response addResponse(\DHL\Datatype\GB\Response $Response)
+ *	@property \Dhl\Datatype\GB\Response $Response
+ *	@method \Dhl\Datatype\GB\Response addResponse(\Dhl\Datatype\GB\Response $Response)
  *	@property null $RegionCode
  *	(RegionCode)
  *	@method null addRegionCode($RegionCode = null)
@@ -45,10 +45,10 @@ use DHL\Entity\Base;
  *	@method null addGMTNegativeIndicator($GMTNegativeIndicator = null)
  *	@property null $GMTOffset
  *	@method null addGMTOffset($GMTOffset = null)
- *	@property \DHL\Datatype\GB\ServiceArea $ServiceArea
- *	@method \DHL\Datatype\GB\ServiceArea addServiceArea(\DHL\Datatype\GB\ServiceArea $ServiceArea)
+ *	@property \Dhl\Datatype\GB\ServiceArea $ServiceArea
+ *	@method \Dhl\Datatype\GB\ServiceArea addServiceArea(\Dhl\Datatype\GB\ServiceArea $ServiceArea)
  *
- * RouteResponse Request model for DHL API
+ * RouteResponse Request model for Dhl API
  */
 class RouteResponse extends Base
 {

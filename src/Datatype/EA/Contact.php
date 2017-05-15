@@ -16,14 +16,14 @@
 
 /**
  * File:        Contact.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -45,10 +45,10 @@ use DHL\Datatype\Base;
  *	(Telex number and answer back code)
  *	@method null addTelex($Telex = null)
  *	(Telex number and answer back code)
- *	@property \DHL\Datatype\EA\Email $Email
- *	@method \DHL\Datatype\EA\Email addEmail(\DHL\Datatype\EA\Email $Email)
+ *	@property \Dhl\Datatype\EA\Email $Email
+ *	@method \Dhl\Datatype\EA\Email addEmail(\Dhl\Datatype\EA\Email $Email)
  *
- * Contact Request model for DHL API
+ * Contact Request model for Dhl API
  */
 class Contact extends Base
 {

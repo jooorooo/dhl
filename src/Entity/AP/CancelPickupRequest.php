@@ -16,14 +16,14 @@
 
 /**
  * File:        CancelPickupRequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AP; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AP; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -48,7 +48,7 @@ use DHL\Entity\Base;
  *	@property null $Reason
  *	@method null addReason($Reason = null)
  *
- * CancelPickupRequest Request model for DHL API
+ * CancelPickupRequest Request model for Dhl API
  */
 class CancelPickupRequest extends Base
 {

@@ -16,14 +16,14 @@
 
 /**
  * File:        Piece.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AP; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AP; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -32,9 +32,9 @@ use DHL\Datatype\Base;
  *	@method null addPieceID($PieceID = null)
  *	(Piece ID)
  *	@property null $PackageType
- *	(Package Type (EE: DHL Express Envelope, OD:Other DHL Packaging, CP:Customer-provided.Ground shipments must choose CP))
+ *	(Package Type (EE: Dhl Express Envelope, OD:Other Dhl Packaging, CP:Customer-provided.Ground shipments must choose CP))
  *	@method null addPackageType($PackageType = null)
- *	(Package Type (EE: DHL Express Envelope, OD:Other DHL Packaging, CP:Customer-provided.Ground shipments must choose CP))
+ *	(Package Type (EE: Dhl Express Envelope, OD:Other Dhl Packaging, CP:Customer-provided.Ground shipments must choose CP))
  *	@property null $Weight
  *	(Weight of piece or shipment)
  *	@method null addWeight($Weight = null)
@@ -52,7 +52,7 @@ use DHL\Datatype\Base;
  *	@property null $PieceContents
  *	@method null addPieceContents($PieceContents = null)
  *
- * Piece Request model for DHL API
+ * Piece Request model for Dhl API
  */
 class Piece extends Base
 {
@@ -78,7 +78,7 @@ class Piece extends Base
             'type' => 'PackageType',
             'required' => false,
             'subobject' => false,
-            'comment' => 'Package Type (EE: DHL Express Envelope, OD:Other DHL Packaging, CP:Customer-provided.Ground shipments must choose CP)',
+            'comment' => 'Package Type (EE: Dhl Express Envelope, OD:Other Dhl Packaging, CP:Customer-provided.Ground shipments must choose CP)',
             'length' => '2',
             'enumeration' => 'EE,OD,CP',
         ), 

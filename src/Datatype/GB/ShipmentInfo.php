@@ -16,35 +16,35 @@
 
 /**
  * File:        ShipmentInfo.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
- *	@property \DHL\Datatype\GB\ServiceArea $OriginServiceArea
- *	@method \DHL\Datatype\GB\ServiceArea addOriginServiceArea(\DHL\Datatype\GB\ServiceArea $OriginServiceArea)
- *	@property \DHL\Datatype\GB\ServiceArea $DestinationServiceArea
- *	@method \DHL\Datatype\GB\ServiceArea addDestinationServiceArea(\DHL\Datatype\GB\ServiceArea $DestinationServiceArea)
+ *	@property \Dhl\Datatype\GB\ServiceArea $OriginServiceArea
+ *	@method \Dhl\Datatype\GB\ServiceArea addOriginServiceArea(\Dhl\Datatype\GB\ServiceArea $OriginServiceArea)
+ *	@property \Dhl\Datatype\GB\ServiceArea $DestinationServiceArea
+ *	@method \Dhl\Datatype\GB\ServiceArea addDestinationServiceArea(\Dhl\Datatype\GB\ServiceArea $DestinationServiceArea)
  *	@property null $ShipperName
  *	(Name)
  *	@method null addShipperName($ShipperName = null)
  *	(Name)
  *	@property null $ShipperAccountNumber
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addShipperAccountNumber($ShipperAccountNumber = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@property null $ConsigneeName
  *	(Name)
  *	@method null addConsigneeName($ConsigneeName = null)
  *	(Name)
- *	@property \DHL\Datatype\GB\dateTime $ShipmentDate
- *	@method \DHL\Datatype\GB\dateTime addShipmentDate(\DHL\Datatype\GB\dateTime $ShipmentDate)
+ *	@property \Dhl\Datatype\GB\dateTime $ShipmentDate
+ *	@method \Dhl\Datatype\GB\dateTime addShipmentDate(\Dhl\Datatype\GB\dateTime $ShipmentDate)
  *	@property array $Pieces
  *	@method array addPieces(array $Pieces)
  *	@property null $Weight
@@ -54,7 +54,7 @@ use DHL\Datatype\Base;
  *	@property null $EstDlvyDate
  *	@method null addEstDlvyDate($EstDlvyDate = null)
  *
- * ShipmentInfo Request model for DHL API
+ * ShipmentInfo Request model for Dhl API
  */
 class ShipmentInfo extends Base
 {
@@ -90,7 +90,7 @@ class ShipmentInfo extends Base
             'type' => 'AccountNumber',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxLength' => '12',
         ), 
         'ConsigneeName' => array(

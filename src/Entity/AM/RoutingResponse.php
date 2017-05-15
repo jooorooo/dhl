@@ -16,14 +16,14 @@
 
 /**
  * File:        RoutingResponse.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AM; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AM; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,8 +35,8 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\AM\Response $Response
- *	@method \DHL\Datatype\AM\Response addResponse(\DHL\Datatype\AM\Response $Response)
+ *	@property \Dhl\Datatype\AM\Response $Response
+ *	@method \Dhl\Datatype\AM\Response addResponse(\Dhl\Datatype\AM\Response $Response)
  *	@property null $GMTNegativeIndicator
  *	@method null addGMTNegativeIndicator($GMTNegativeIndicator = null)
  *	@property null $GMTOffset
@@ -45,10 +45,10 @@ use DHL\Entity\Base;
  *	(RegionCode)
  *	@method null addRegionCode($RegionCode = null)
  *	(RegionCode)
- *	@property \DHL\Datatype\AM\ServiceArea $ServiceArea
- *	@method \DHL\Datatype\AM\ServiceArea addServiceArea(\DHL\Datatype\AM\ServiceArea $ServiceArea)
+ *	@property \Dhl\Datatype\AM\ServiceArea $ServiceArea
+ *	@method \Dhl\Datatype\AM\ServiceArea addServiceArea(\Dhl\Datatype\AM\ServiceArea $ServiceArea)
  *
- * RoutingResponse Request model for DHL API
+ * RoutingResponse Request model for Dhl API
  */
 class RoutingResponse extends Base
 {

@@ -16,14 +16,14 @@
 
 /**
  * File:        KnownTrackingRequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AM; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AM; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -58,7 +58,7 @@ use DHL\Entity\Base;
  *	@method null addCountryCode($CountryCode = null)
  *	(ISO country codes)
  *
- * KnownTrackingRequest Request model for DHL API
+ * KnownTrackingRequest Request model for Dhl API
  */
 class KnownTrackingRequest extends Base
 {

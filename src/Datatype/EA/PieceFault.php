@@ -16,14 +16,14 @@
 
 /**
  * File:        PieceFault.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -36,7 +36,7 @@ use DHL\Datatype\Base;
  *	@property null $ConditionData
  *	@method null addConditionData($ConditionData = null)
  *
- * PieceFault Request model for DHL API
+ * PieceFault Request model for Dhl API
  */
 class PieceFault extends Base
 {

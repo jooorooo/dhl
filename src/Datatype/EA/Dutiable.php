@@ -16,14 +16,14 @@
 
 /**
  * File:        Dutiable.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -54,7 +54,7 @@ use DHL\Datatype\Base;
  *	@property null $TermsOfTrade
  *	@method null addTermsOfTrade($TermsOfTrade = null)
  *
- * Dutiable Request model for DHL API
+ * Dutiable Request model for Dhl API
  */
 class Dutiable extends Base
 {

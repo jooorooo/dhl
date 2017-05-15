@@ -16,14 +16,14 @@
 
 /**
  * File:        TrackingResponse.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\GB; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\GB; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,18 +35,18 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\GB\Response $Response
- *	@method \DHL\Datatype\GB\Response addResponse(\DHL\Datatype\GB\Response $Response)
- *	@property \DHL\Datatype\GB\AWBInfo $AWBInfo
- *	@method \DHL\Datatype\GB\AWBInfo addAWBInfo(\DHL\Datatype\GB\AWBInfo $AWBInfo)
- *	@property \DHL\Datatype\GB\Fault $Fault
- *	@method \DHL\Datatype\GB\Fault addFault(\DHL\Datatype\GB\Fault $Fault)
+ *	@property \Dhl\Datatype\GB\Response $Response
+ *	@method \Dhl\Datatype\GB\Response addResponse(\Dhl\Datatype\GB\Response $Response)
+ *	@property \Dhl\Datatype\GB\AWBInfo $AWBInfo
+ *	@method \Dhl\Datatype\GB\AWBInfo addAWBInfo(\Dhl\Datatype\GB\AWBInfo $AWBInfo)
+ *	@property \Dhl\Datatype\GB\Fault $Fault
+ *	@method \Dhl\Datatype\GB\Fault addFault(\Dhl\Datatype\GB\Fault $Fault)
  *	@property null $LanguageCode
  *	(ISO Language Code)
  *	@method null addLanguageCode($LanguageCode = null)
  *	(ISO Language Code)
  *
- * TrackingResponse Request model for DHL API
+ * TrackingResponse Request model for Dhl API
  */
 class TrackingResponse extends Base
 {

@@ -16,14 +16,14 @@
 
 /**
  * File:        Email.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -50,7 +50,7 @@ use DHL\Datatype\Base;
  *	@method null addBody($Body = null)
  *	(Body of an email message)
  *
- * Email Request model for DHL API
+ * Email Request model for Dhl API
  */
 class Email extends Base
 {

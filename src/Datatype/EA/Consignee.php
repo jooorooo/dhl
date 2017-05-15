@@ -16,14 +16,14 @@
 
 /**
  * File:        Consignee.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -61,10 +61,10 @@ use DHL\Datatype\Base;
  *	@method null addFederalTaxId($FederalTaxId = null)
  *	@property null $StateTaxId
  *	@method null addStateTaxId($StateTaxId = null)
- *	@property \DHL\Datatype\EA\Contact $Contact
- *	@method \DHL\Datatype\EA\Contact addContact(\DHL\Datatype\EA\Contact $Contact)
+ *	@property \Dhl\Datatype\EA\Contact $Contact
+ *	@method \Dhl\Datatype\EA\Contact addContact(\Dhl\Datatype\EA\Contact $Contact)
  *
- * Consignee Request model for DHL API
+ * Consignee Request model for Dhl API
  */
 class Consignee extends Base
 {

@@ -16,14 +16,14 @@
 
 /**
  * File:        Label.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -35,14 +35,14 @@ use DHL\Datatype\Base;
  *	(Boolean flag)
  *	@method null addLogo($Logo = null)
  *	(Boolean flag)
- *	@property \DHL\Datatype\AM\CustomerLogo $CustomerLogo
- *	@method \DHL\Datatype\AM\CustomerLogo addCustomerLogo(\DHL\Datatype\AM\CustomerLogo $CustomerLogo)
+ *	@property \Dhl\Datatype\AM\CustomerLogo $CustomerLogo
+ *	@method \Dhl\Datatype\AM\CustomerLogo addCustomerLogo(\Dhl\Datatype\AM\CustomerLogo $CustomerLogo)
  *	@property null $Resolution
  *	(Resolution)
  *	@method null addResolution($Resolution = null)
  *	(Resolution)
  *
- * Label Request model for DHL API
+ * Label Request model for Dhl API
  */
 class Label extends Base
 {

@@ -16,14 +16,14 @@
 
 /**
  * File:        WeightSeg.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AM; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AM; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -36,7 +36,7 @@ use DHL\Datatype\Base;
  *	@method null addWeightUnit($WeightUnit = null)
  *	(Unit of weight measurement (L:Pounds))
  *
- * WeightSeg Request model for DHL API
+ * WeightSeg Request model for Dhl API
  */
 class WeightSeg extends Base
 {

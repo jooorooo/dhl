@@ -16,21 +16,21 @@
 
 /**
  * File:        Request.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AP; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AP; 
+use Dhl\Datatype\Base;
 
 /**
  *
- *	@property \DHL\Datatype\AP\ServiceHeader $ServiceHeader
- *	@method \DHL\Datatype\AP\ServiceHeader addServiceHeader(\DHL\Datatype\AP\ServiceHeader $ServiceHeader)
+ *	@property \Dhl\Datatype\AP\ServiceHeader $ServiceHeader
+ *	@method \Dhl\Datatype\AP\ServiceHeader addServiceHeader(\Dhl\Datatype\AP\ServiceHeader $ServiceHeader)
  *
- * Request Request model for DHL API
+ * Request Request model for Dhl API
  */
 class Request extends Base
 {

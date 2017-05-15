@@ -16,14 +16,14 @@
 
 /**
  * File:        CancelPURequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\GB; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\GB; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -56,7 +56,7 @@ use DHL\Entity\Base;
  *	@property null $CancelTime
  *	@method null addCancelTime($CancelTime = null)
  *
- * CancelPURequest Request model for DHL API
+ * CancelPURequest Request model for Dhl API
  */
 class CancelPURequest extends Base
 {

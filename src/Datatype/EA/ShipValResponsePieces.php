@@ -16,21 +16,21 @@
 
 /**
  * File:        ShipValResponsePieces.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
- *	@property \DHL\Datatype\EA\ShipValResponsePiece $Piece
- *	@method \DHL\Datatype\EA\ShipValResponsePiece addPiece(\DHL\Datatype\EA\ShipValResponsePiece $Piece)
+ *	@property \Dhl\Datatype\EA\ShipValResponsePiece $Piece
+ *	@method \Dhl\Datatype\EA\ShipValResponsePiece addPiece(\Dhl\Datatype\EA\ShipValResponsePiece $Piece)
  *
- * ShipValResponsePieces Request model for DHL API
+ * ShipValResponsePieces Request model for Dhl API
  */
 class ShipValResponsePieces extends Base
 {

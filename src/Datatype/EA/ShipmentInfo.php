@@ -16,29 +16,29 @@
 
 /**
  * File:        ShipmentInfo.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
- *	@property \DHL\Datatype\EA\OriginServiceArea $OriginServiceArea
- *	@method \DHL\Datatype\EA\OriginServiceArea addOriginServiceArea(\DHL\Datatype\EA\OriginServiceArea $OriginServiceArea)
- *	@property \DHL\Datatype\EA\DestinationServiceArea $DestinationServiceArea
- *	@method \DHL\Datatype\EA\DestinationServiceArea addDestinationServiceArea(\DHL\Datatype\EA\DestinationServiceArea $DestinationServiceArea)
+ *	@property \Dhl\Datatype\EA\OriginServiceArea $OriginServiceArea
+ *	@method \Dhl\Datatype\EA\OriginServiceArea addOriginServiceArea(\Dhl\Datatype\EA\OriginServiceArea $OriginServiceArea)
+ *	@property \Dhl\Datatype\EA\DestinationServiceArea $DestinationServiceArea
+ *	@method \Dhl\Datatype\EA\DestinationServiceArea addDestinationServiceArea(\Dhl\Datatype\EA\DestinationServiceArea $DestinationServiceArea)
  *	@property null $ShipperName
  *	(Name)
  *	@method null addShipperName($ShipperName = null)
  *	(Name)
  *	@property null $ShipperAccountNumber
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@method null addShipperAccountNumber($ShipperAccountNumber = null)
- *	(DHL Account Number)
+ *	(Dhl Account Number)
  *	@property null $ConsigneeName
  *	(Name)
  *	@method null addConsigneeName($ConsigneeName = null)
@@ -61,12 +61,12 @@ use DHL\Datatype\Base;
  *	@method null addShipmentDesc($ShipmentDesc = null)
  *	@property null $DlvyNotificationFlag
  *	@method null addDlvyNotificationFlag($DlvyNotificationFlag = null)
- *	@property \DHL\Datatype\EA\Shipper $Shipper
- *	@method \DHL\Datatype\EA\Shipper addShipper(\DHL\Datatype\EA\Shipper $Shipper)
- *	@property \DHL\Datatype\EA\Consignee $Consignee
- *	@method \DHL\Datatype\EA\Consignee addConsignee(\DHL\Datatype\EA\Consignee $Consignee)
+ *	@property \Dhl\Datatype\EA\Shipper $Shipper
+ *	@method \Dhl\Datatype\EA\Shipper addShipper(\Dhl\Datatype\EA\Shipper $Shipper)
+ *	@property \Dhl\Datatype\EA\Consignee $Consignee
+ *	@method \Dhl\Datatype\EA\Consignee addConsignee(\Dhl\Datatype\EA\Consignee $Consignee)
  *
- * ShipmentInfo Request model for DHL API
+ * ShipmentInfo Request model for Dhl API
  */
 class ShipmentInfo extends Base
 {
@@ -102,7 +102,7 @@ class ShipmentInfo extends Base
             'type' => 'AccountNumber',
             'required' => false,
             'subobject' => false,
-            'comment' => 'DHL Account Number',
+            'comment' => 'Dhl Account Number',
             'maxInclusive' => '9999999999',
             'minInclusive' => '100000000',
         ), 

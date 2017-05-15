@@ -16,14 +16,14 @@
 
 /**
  * File:        ExportDeclaration.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\GB; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\GB; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -60,7 +60,7 @@ use DHL\Datatype\Base;
  *	@property array $ExportLineItems
  *	@method array addExportLineItems(array $ExportLineItems)
  *
- * ExportDeclaration Request model for DHL API
+ * ExportDeclaration Request model for Dhl API
  */
 class ExportDeclaration extends Base
 {

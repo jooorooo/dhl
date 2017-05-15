@@ -16,14 +16,14 @@
 
 /**
  * File:        ExportDeclaration.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
@@ -57,10 +57,10 @@ use DHL\Datatype\Base;
  *	@method null addSedNumberType($SedNumberType = null)
  *	@property null $MxStateCode
  *	@method null addMxStateCode($MxStateCode = null)
- *	@property \DHL\Datatype\EA\ExportLineItem $ExportLineItem
- *	@method \DHL\Datatype\EA\ExportLineItem addExportLineItem(\DHL\Datatype\EA\ExportLineItem $ExportLineItem)
+ *	@property \Dhl\Datatype\EA\ExportLineItem $ExportLineItem
+ *	@method \Dhl\Datatype\EA\ExportLineItem addExportLineItem(\Dhl\Datatype\EA\ExportLineItem $ExportLineItem)
  *
- * ExportDeclaration Request model for DHL API
+ * ExportDeclaration Request model for Dhl API
  */
 class ExportDeclaration extends Base
 {

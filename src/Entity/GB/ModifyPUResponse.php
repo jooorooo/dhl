@@ -16,14 +16,14 @@
 
 /**
  * File:        ModifyPUResponse.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\GB; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\GB; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,14 +35,14 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\GB\Response $Response
- *	@method \DHL\Datatype\GB\Response addResponse(\DHL\Datatype\GB\Response $Response)
+ *	@property \Dhl\Datatype\GB\Response $Response
+ *	@method \Dhl\Datatype\GB\Response addResponse(\Dhl\Datatype\GB\Response $Response)
  *	@property null $RegionCode
  *	(RegionCode)
  *	@method null addRegionCode($RegionCode = null)
  *	(RegionCode)
- *	@property \DHL\Datatype\GB\Note $Note
- *	@method \DHL\Datatype\GB\Note addNote(\DHL\Datatype\GB\Note $Note)
+ *	@property \Dhl\Datatype\GB\Note $Note
+ *	@method \Dhl\Datatype\GB\Note addNote(\Dhl\Datatype\GB\Note $Note)
  *	@property null $ConfirmationNumber
  *	@method null addConfirmationNumber($ConfirmationNumber = null)
  *	@property null $ReadyByTime
@@ -68,7 +68,7 @@ use DHL\Entity\Base;
  *	@method null addCountryCode($CountryCode = null)
  *	(ISO country codes)
  *
- * ModifyPUResponse Request model for DHL API
+ * ModifyPUResponse Request model for Dhl API
  */
 class ModifyPUResponse extends Base
 {

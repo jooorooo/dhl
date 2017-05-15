@@ -16,21 +16,21 @@
 
 /**
  * File:        DocImages.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\AP; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\AP; 
+use Dhl\Datatype\Base;
 
 /**
  *
- *	@property \DHL\Datatype\AP\DocImage $DocImage
- *	@method \DHL\Datatype\AP\DocImage addDocImage(\DHL\Datatype\AP\DocImage $DocImage)
+ *	@property \Dhl\Datatype\AP\DocImage $DocImage
+ *	@method \Dhl\Datatype\AP\DocImage addDocImage(\Dhl\Datatype\AP\DocImage $DocImage)
  *
- * DocImages Request model for DHL API
+ * DocImages Request model for Dhl API
  */
 class DocImages extends Base
 {

@@ -16,14 +16,14 @@
 
 /**
  * File:        GetCapability.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\AM; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\AM; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -35,16 +35,16 @@ use DHL\Entity\Base;
  *	@method null addSiteID($SiteID = null)
  *	@property null $Password
  *	@method null addPassword($Password = null)
- *	@property \DHL\Datatype\AM\DCTFrom $From
- *	@method \DHL\Datatype\AM\DCTFrom addFrom(\DHL\Datatype\AM\DCTFrom $From)
- *	@property \DHL\Datatype\AM\BkgDetailsType $BkgDetails
- *	@method \DHL\Datatype\AM\BkgDetailsType addBkgDetails(\DHL\Datatype\AM\BkgDetailsType $BkgDetails)
- *	@property \DHL\Datatype\AM\DCTTo $To
- *	@method \DHL\Datatype\AM\DCTTo addTo(\DHL\Datatype\AM\DCTTo $To)
- *	@property \DHL\Datatype\AM\DCTDutiable $Dutiable
- *	@method \DHL\Datatype\AM\DCTDutiable addDutiable(\DHL\Datatype\AM\DCTDutiable $Dutiable)
+ *	@property \Dhl\Datatype\AM\DCTFrom $From
+ *	@method \Dhl\Datatype\AM\DCTFrom addFrom(\Dhl\Datatype\AM\DCTFrom $From)
+ *	@property \Dhl\Datatype\AM\BkgDetailsType $BkgDetails
+ *	@method \Dhl\Datatype\AM\BkgDetailsType addBkgDetails(\Dhl\Datatype\AM\BkgDetailsType $BkgDetails)
+ *	@property \Dhl\Datatype\AM\DCTTo $To
+ *	@method \Dhl\Datatype\AM\DCTTo addTo(\Dhl\Datatype\AM\DCTTo $To)
+ *	@property \Dhl\Datatype\AM\DCTDutiable $Dutiable
+ *	@method \Dhl\Datatype\AM\DCTDutiable addDutiable(\Dhl\Datatype\AM\DCTDutiable $Dutiable)
  *
- * GetCapability Request model for DHL API
+ * GetCapability Request model for Dhl API
  */
 class GetCapability extends Base
 {

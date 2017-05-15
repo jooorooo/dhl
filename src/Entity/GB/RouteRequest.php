@@ -16,14 +16,14 @@
 
 /**
  * File:        RouteRequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\GB; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\GB; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -70,7 +70,7 @@ use DHL\Entity\Base;
  *	@property null $OriginCountryCode
  *	@method null addOriginCountryCode($OriginCountryCode = null)
  *
- * RouteRequest Request model for DHL API
+ * RouteRequest Request model for Dhl API
  */
 class RouteRequest extends Base
 {

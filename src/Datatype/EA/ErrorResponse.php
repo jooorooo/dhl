@@ -16,23 +16,23 @@
 
 /**
  * File:        ErrorResponse.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
- *	@property \DHL\Datatype\EA\ServiceHeader $ServiceHeader
- *	@method \DHL\Datatype\EA\ServiceHeader addServiceHeader(\DHL\Datatype\EA\ServiceHeader $ServiceHeader)
- *	@property \DHL\Datatype\EA\Status $Status
- *	@method \DHL\Datatype\EA\Status addStatus(\DHL\Datatype\EA\Status $Status)
+ *	@property \Dhl\Datatype\EA\ServiceHeader $ServiceHeader
+ *	@method \Dhl\Datatype\EA\ServiceHeader addServiceHeader(\Dhl\Datatype\EA\ServiceHeader $ServiceHeader)
+ *	@property \Dhl\Datatype\EA\Status $Status
+ *	@method \Dhl\Datatype\EA\Status addStatus(\Dhl\Datatype\EA\Status $Status)
  *
- * ErrorResponse Request model for DHL API
+ * ErrorResponse Request model for Dhl API
  */
 class ErrorResponse extends Base
 {

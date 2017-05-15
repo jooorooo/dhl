@@ -16,14 +16,14 @@
 
 /**
  * File:        ShipmentRequest.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Entity\GB; 
-use DHL\Entity\Base;
+namespace Dhl\Entity\GB; 
+use Dhl\Entity\Base;
 
 /**
  *
@@ -51,28 +51,28 @@ use DHL\Entity\Base;
  *	(Pieces Enabling Flag)
  *	@method null addPiecesEnabled($PiecesEnabled = null)
  *	(Pieces Enabling Flag)
- *	@property \DHL\Datatype\GB\Billing $Billing
- *	@method \DHL\Datatype\GB\Billing addBilling(\DHL\Datatype\GB\Billing $Billing)
- *	@property \DHL\Datatype\GB\Consignee $Consignee
- *	@method \DHL\Datatype\GB\Consignee addConsignee(\DHL\Datatype\GB\Consignee $Consignee)
- *	@property \DHL\Datatype\GB\Commodity $Commodity
- *	@method \DHL\Datatype\GB\Commodity addCommodity(\DHL\Datatype\GB\Commodity $Commodity)
- *	@property \DHL\Datatype\GB\Dutiable $Dutiable
- *	@method \DHL\Datatype\GB\Dutiable addDutiable(\DHL\Datatype\GB\Dutiable $Dutiable)
- *	@property \DHL\Datatype\GB\ExportDeclaration $ExportDeclaration
- *	@method \DHL\Datatype\GB\ExportDeclaration addExportDeclaration(\DHL\Datatype\GB\ExportDeclaration $ExportDeclaration)
- *	@property \DHL\Datatype\GB\Reference $Reference
- *	@method \DHL\Datatype\GB\Reference addReference(\DHL\Datatype\GB\Reference $Reference)
- *	@property \DHL\Datatype\GB\ShipmentDetails $ShipmentDetails
- *	@method \DHL\Datatype\GB\ShipmentDetails addShipmentDetails(\DHL\Datatype\GB\ShipmentDetails $ShipmentDetails)
- *	@property \DHL\Datatype\GB\Shipper $Shipper
- *	@method \DHL\Datatype\GB\Shipper addShipper(\DHL\Datatype\GB\Shipper $Shipper)
+ *	@property \Dhl\Datatype\GB\Billing $Billing
+ *	@method \Dhl\Datatype\GB\Billing addBilling(\Dhl\Datatype\GB\Billing $Billing)
+ *	@property \Dhl\Datatype\GB\Consignee $Consignee
+ *	@method \Dhl\Datatype\GB\Consignee addConsignee(\Dhl\Datatype\GB\Consignee $Consignee)
+ *	@property \Dhl\Datatype\GB\Commodity $Commodity
+ *	@method \Dhl\Datatype\GB\Commodity addCommodity(\Dhl\Datatype\GB\Commodity $Commodity)
+ *	@property \Dhl\Datatype\GB\Dutiable $Dutiable
+ *	@method \Dhl\Datatype\GB\Dutiable addDutiable(\Dhl\Datatype\GB\Dutiable $Dutiable)
+ *	@property \Dhl\Datatype\GB\ExportDeclaration $ExportDeclaration
+ *	@method \Dhl\Datatype\GB\ExportDeclaration addExportDeclaration(\Dhl\Datatype\GB\ExportDeclaration $ExportDeclaration)
+ *	@property \Dhl\Datatype\GB\Reference $Reference
+ *	@method \Dhl\Datatype\GB\Reference addReference(\Dhl\Datatype\GB\Reference $Reference)
+ *	@property \Dhl\Datatype\GB\ShipmentDetails $ShipmentDetails
+ *	@method \Dhl\Datatype\GB\ShipmentDetails addShipmentDetails(\Dhl\Datatype\GB\ShipmentDetails $ShipmentDetails)
+ *	@property \Dhl\Datatype\GB\Shipper $Shipper
+ *	@method \Dhl\Datatype\GB\Shipper addShipper(\Dhl\Datatype\GB\Shipper $Shipper)
  *	@property array $SpecialService
- *	@method \DHL\Datatype\GB\SpecialService addSpecialService(\DHL\Datatype\GB\SpecialService $SpecialService)
- *	@property \DHL\Datatype\GB\Notification $Notification
- *	@method \DHL\Datatype\GB\Notification addNotification(\DHL\Datatype\GB\Notification $Notification)
- *	@property \DHL\Datatype\GB\Place $Place
- *	@method \DHL\Datatype\GB\Place addPlace(\DHL\Datatype\GB\Place $Place)
+ *	@method \Dhl\Datatype\GB\SpecialService addSpecialService(\Dhl\Datatype\GB\SpecialService $SpecialService)
+ *	@property \Dhl\Datatype\GB\Notification $Notification
+ *	@method \Dhl\Datatype\GB\Notification addNotification(\Dhl\Datatype\GB\Notification $Notification)
+ *	@property \Dhl\Datatype\GB\Place $Place
+ *	@method \Dhl\Datatype\GB\Place addPlace(\Dhl\Datatype\GB\Place $Place)
  *	@property null $EProcShip
  *	@method null addEProcShip($EProcShip = null)
  *	@property null $Airwaybill
@@ -87,10 +87,10 @@ use DHL\Entity\Base;
  *	@method null addRequestArchiveDoc($RequestArchiveDoc = null)
  *	@property null $NumberOfArchiveDoc
  *	@method null addNumberOfArchiveDoc($NumberOfArchiveDoc = null)
- *	@property \DHL\Datatype\GB\Label $Label
- *	@method \DHL\Datatype\GB\Label addLabel(\DHL\Datatype\GB\Label $Label)
+ *	@property \Dhl\Datatype\GB\Label $Label
+ *	@method \Dhl\Datatype\GB\Label addLabel(\Dhl\Datatype\GB\Label $Label)
  *
- * ShipmentRequest Request model for DHL API
+ * ShipmentRequest Request model for Dhl API
  */
 class ShipmentRequest extends Base
 {

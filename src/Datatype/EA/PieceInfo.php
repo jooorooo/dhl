@@ -16,23 +16,23 @@
 
 /**
  * File:        PieceInfo.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype\EA; 
-use DHL\Datatype\Base;
+namespace Dhl\Datatype\EA; 
+use Dhl\Datatype\Base;
 
 /**
  *
- *	@property \DHL\Datatype\EA\PieceDetails $PieceDetails
- *	@method \DHL\Datatype\EA\PieceDetails addPieceDetails(\DHL\Datatype\EA\PieceDetails $PieceDetails)
- *	@property \DHL\Datatype\EA\PieceEvent $PieceEvent
- *	@method \DHL\Datatype\EA\PieceEvent addPieceEvent(\DHL\Datatype\EA\PieceEvent $PieceEvent)
+ *	@property \Dhl\Datatype\EA\PieceDetails $PieceDetails
+ *	@method \Dhl\Datatype\EA\PieceDetails addPieceDetails(\Dhl\Datatype\EA\PieceDetails $PieceDetails)
+ *	@property \Dhl\Datatype\EA\PieceEvent $PieceEvent
+ *	@method \Dhl\Datatype\EA\PieceEvent addPieceEvent(\Dhl\Datatype\EA\PieceEvent $PieceEvent)
  *
- * PieceInfo Request model for DHL API
+ * PieceInfo Request model for Dhl API
  */
 class PieceInfo extends Base
 {
