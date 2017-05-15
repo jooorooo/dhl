@@ -98,6 +98,6 @@ class GetQuote extends Base
             'subobject' => true,
             'multivalues' => false,
             'minOccurs' => 0,
-        ), 
+        ),
    );
 }

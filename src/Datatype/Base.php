@@ -16,16 +16,16 @@
 
 /**
  * File:        Base.php
- * Project:     DHL API
+ * Project:     Dhl API
  *
  * @author      Georgi Nachev (jooorooo@gmail.com)
  * @version     0.1
  */
 
-namespace DHL\Datatype;
+namespace Dhl\Datatype;
 
 /**
- * Abstract class for each datatype used by the models by DHL
+ * Abstract class for each datatype used by the models by Dhl
  */
 abstract class Base
 {
@@ -81,7 +81,7 @@ abstract class Base
     }
 
     /**
-     * Generates the XML to be sent to DHL
+     * Generates the XML to be sent to Dhl
      * 
      * @param \XMLWriter $xmlWriter XMl Writer instance
      * 

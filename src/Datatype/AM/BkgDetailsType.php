@@ -54,7 +54,7 @@ use Dhl\Datatype\Base;
  *	@property null $MaxPieceWidth
  *	@method null addMaxPieceWidth($MaxPieceWidth = null)
  *	@property array $Pieces
- *	@method array addPieces(array $Pieces)
+ *	@method array addPiece(\Dhl\Datatype\AM\PieceType $Pieces)
  *	@property null $PaymentAccountNumber
  *	@method null addPaymentAccountNumber($PaymentAccountNumber = null)
  *	@property null $IsDutiable

@@ -1,7 +1,7 @@
 {
     "name": "simexis/dhl",
 
-    "description": "PHP library to communicate with the DHL XML Services.",
+    "description": "PHP library to communicate with the Dhl XML Services.",
 
     "require": {
       "php": "^5.6|^7"

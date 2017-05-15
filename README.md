@@ -21,7 +21,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 ## Description
 
 
-This library is a PHP Oriented Object client for the DHL XML API Services. DHL XML Services is an online web services integration capability that provides DHL’s service availability, transit times, rates, shipment and courier pickup booking along with shipment tracking from over 140 countries around the world. Using DHL’s XML Services, customers can incorporate DHL shipping functionality into their websites, customer service applications or order processing systems.
+This library is a PHP Oriented Object client for the Dhl XML API Services. Dhl XML Services is an online web services integration capability that provides Dhl’s service availability, transit times, rates, shipment and courier pickup booking along with shipment tracking from over 140 countries around the world. Using Dhl’s XML Services, customers can incorporate Dhl shipping functionality into their websites, customer service applications or order processing systems.
 
 
 ## Setup 
