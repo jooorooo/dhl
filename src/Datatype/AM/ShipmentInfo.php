@@ -43,8 +43,8 @@ use Dhl\Datatype\Base;
  *	(Name)
  *	@method null addConsigneeName($ConsigneeName = null)
  *	(Name)
- *	@property \Dhl\Datatype\AM\dateTime $ShipmentDate
- *	@method \Dhl\Datatype\AM\dateTime addShipmentDate(\Dhl\Datatype\AM\dateTime $ShipmentDate)
+ *	@property \dateTime $ShipmentDate
+ *	@method \dateTime addShipmentDate(\dateTime $ShipmentDate)
  *	@property \Dhl\Datatype\AM\ $Pieces
  *	@method \Dhl\Datatype\AM\ addPieces(\Dhl\Datatype\AM\ $Pieces)
  *	@property null $Weight
@@ -119,7 +119,7 @@ class ShipmentInfo extends Base
             'subobject' => true,
         ), 
         'Pieces' => array(
-            'type' => '',
+            'type' => 'Pieces',
             'required' => false,
             'subobject' => true,
         ), 

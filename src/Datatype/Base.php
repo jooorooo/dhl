@@ -314,7 +314,7 @@ abstract class Base
                 $tmp = get_class($this);
                 $parts = explode('\\', $tmp);
                 array_pop($parts);
-                $className = implode('\\', $parts) . '\\' . $infos['type'];
+                $className = class_exists($infos['type']) ? $infos['type'] : implode('\\', $parts) . '\\' . $infos['type'];
                 $this->_values[$name] = new $className();
             }
             else
