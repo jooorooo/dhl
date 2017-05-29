@@ -31,6 +31,7 @@ use Dhl\Datatype\Base;
  *	@method null addNumberOfPieces($NumberOfPieces = null)
  *	@property array $Pieces
  *	@method array addPieces(array $Pieces)
+ *	@method Piece addPiece(Piece $Piece)
  *	@property null $Weight
  *	(Weight of piece or shipment)
  *	@method null addWeight($Weight = null)

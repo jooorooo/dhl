@@ -466,5 +466,15 @@ class ShipmentResponse extends Base
             'required' => false,
             'subobject' => true,
         ),
+        'DHLRoutingCode' => array(
+            'type' => 'string',
+            'required' => false,
+            'subobject' => false,
+        ),
+        'DHLRoutingDataId' => array(
+            'type' => 'string',
+            'required' => false,
+            'subobject' => false,
+        ),
     );
 }

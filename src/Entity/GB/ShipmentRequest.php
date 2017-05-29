@@ -258,6 +258,6 @@ class ShipmentRequest extends Base
             'type' => 'Label',
             'required' => false,
             'subobject' => true,
-        ), 
+        ),
     );
 }

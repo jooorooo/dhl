@@ -47,6 +47,8 @@ use Dhl\Entity\Base;
  *	@method null addGMTOffset($GMTOffset = null)
  *	@property \Dhl\Datatype\GB\ServiceArea $ServiceArea
  *	@method \Dhl\Datatype\GB\ServiceArea addServiceArea(\Dhl\Datatype\GB\ServiceArea $ServiceArea)
+ *	@property \Dhl\Datatype\GB\Note $Note
+ *	@method \Dhl\Datatype\GB\Note addNote(\Dhl\Datatype\GB\Note $Note)
  *
  * RouteResponse Request model for Dhl API
  */
@@ -103,6 +105,11 @@ class RouteResponse extends Base
             'type' => 'ServiceArea',
             'required' => false,
             'subobject' => true,
-        ), 
+        ),
+        'Note' => array(
+            'type' => 'Note',
+            'required' => false,
+            'subobject' => true,
+        ),
     );
 }
